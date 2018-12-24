@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ControlArea /> Snapshots renders correctly 1`] = `
+<div
+  className="control-area"
+>
+  <a
+    className="waves-effect waves-light btn"
+  >
+    New game
+  </a>
+</div>
+`;

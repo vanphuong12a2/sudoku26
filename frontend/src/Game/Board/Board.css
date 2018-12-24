@@ -1,25 +1,5 @@
-.main-board input,
-.main-board input:hover,
-#root .main-board input:focus {
-    width: 50px;
-    height: 50px;
-    text-align:center;
-    border: 0;
-    margin: 0;
-    font-size: 1.7rem;
-}
-
-.main-board input.writable {
-    color: green;
-}
-
-.main-board input.readonly {
-    cursor: pointer;
-    color: black;
-}
-
 .main-board {
-    margin:1em auto;
+    margin:1em;
     max-width: 450px;
     max-height: 450px;
 }
@@ -42,4 +22,24 @@
 
 .main-board caption {
     text-align: left;
+}
+
+.main-board input,
+.main-board input:hover,
+#root .main-board input:focus {
+    width: 50px;
+    height: 50px;
+    text-align:center;
+    border: 0;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.main-board input.writable {
+    color: green;
+}
+
+.main-board input.readonly {
+    cursor: pointer;
+    color: black;
 }

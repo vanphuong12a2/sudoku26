@@ -1,4 +1,13 @@
+/*@import "@material/button/mdc-button";*/
+
 header {
     text-align: center;
-    margin: 30px;
+    margin: auto;
+    max-width: 600px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
