@@ -36,7 +36,7 @@ const ControlArea = (props: Props) => {
     ];
 
     const solverButtons = [
-        new Button('Clear', props.clearBoardOnClickHandler),
+        new Button('Clear all', props.clearBoardOnClickHandler),
         new Button('Validate', dummyHandler),
         new Button('Show solution', dummyHandler)
     ];

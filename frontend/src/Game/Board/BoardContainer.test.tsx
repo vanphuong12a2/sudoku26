@@ -2,12 +2,12 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import BoardContainer from './BoardContainer';
 import Board from './Board';
-import {EMPTY_CELL} from '../Cell/Cell';
+import {sampleBoardData} from '../../common/testData';
 
 describe('<BoardContainer />', () => {
 
     it('should set the initial state to board data', () => {
-        let boardData = new Array(9).fill(new Array(9).fill(EMPTY_CELL));
+        let boardData = sampleBoardData();
         const wrapper = shallow(<BoardContainer boardData={boardData}/>);
 
         expect(wrapper.find(Board).length).toBe(1);

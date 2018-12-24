@@ -6,7 +6,7 @@ const generateBoard = () => {
 };
 
 const generateEmptyBoard = () => {
-    return new Array(9).fill(new Array(9).fill(EMPTY_CELL));
+    return new Array(9).fill(0).map(() => new Array(9).fill(EMPTY_CELL));
 };
 
 export {generateBoard, generateEmptyBoard}

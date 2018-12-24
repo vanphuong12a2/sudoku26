@@ -15,7 +15,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -24,7 +24,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -42,7 +42,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -51,7 +51,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -78,7 +78,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -87,7 +87,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
       </tr>
@@ -107,7 +107,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -116,7 +116,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -134,7 +134,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -143,7 +143,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -161,7 +161,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -170,7 +170,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
       </tr>
@@ -181,7 +181,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -190,7 +190,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -226,7 +226,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -244,7 +244,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -253,7 +253,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
       </tr>
@@ -264,7 +264,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -282,7 +282,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -309,7 +309,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -318,7 +318,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -336,7 +336,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
       </tr>
@@ -347,7 +347,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -365,7 +365,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -374,7 +374,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -383,7 +383,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -401,7 +401,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -448,7 +448,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -457,7 +457,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -466,7 +466,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -475,7 +475,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -484,7 +484,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -502,7 +502,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
       </tr>
@@ -513,7 +513,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -522,7 +522,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -531,7 +531,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -540,7 +540,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -558,7 +558,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -605,7 +605,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -614,7 +614,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -632,7 +632,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -650,7 +650,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -659,7 +659,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -679,7 +679,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -706,7 +706,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -715,7 +715,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -733,7 +733,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -742,7 +742,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
         <td>
@@ -751,7 +751,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
             maxLength={1}
             onChange={[Function]}
             readOnly={false}
-            value={0}
+            value=""
           />
         </td>
       </tr>
@@ -785,7 +785,7 @@ exports[`<Game /> Snapshots renders game area correctly 1`] = `
         className="waves-effect waves-light btn-small"
         onClick={[MockFunction]}
       >
-        Clear
+        Clear all
       </a>
       <a
         className="waves-effect waves-light btn-small"

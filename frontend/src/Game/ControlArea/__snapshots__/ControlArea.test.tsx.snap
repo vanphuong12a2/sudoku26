@@ -29,7 +29,7 @@ exports[`<ControlArea /> Snapshots renders correctly 1`] = `
       className="waves-effect waves-light btn-small"
       onClick={[MockFunction]}
     >
-      Clear
+      Clear all
     </a>
     <a
       className="waves-effect waves-light btn-small"
