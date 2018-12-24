@@ -10,7 +10,11 @@ interface CellProps {
 const Cell = (props: CellProps) => {
     return (
         <td>
-            <input className='cell' maxLength={1} readOnly={props.readOnly} value={props.cellData}/>
+            <input
+                className={props.readOnly ? 'readonly' : 'writable'}
+                maxLength={1}
+                readOnly={props.readOnly}
+                value={props.cellData}/>
         </td>
     );
 };
@@ -22,7 +26,7 @@ interface Props {
 
 const Board = (props: Props) => {
     return (
-        <table>
+        <table className='main-board'>
             <tbody>
             {props.currentBoard.map((row, rowIndex) => {
                 return (
