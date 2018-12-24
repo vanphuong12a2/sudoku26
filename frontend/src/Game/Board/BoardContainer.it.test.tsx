@@ -25,5 +25,14 @@ describe('<BoardContainer />', () => {
 
             expect(boardContainer.find('input').first().prop('value')).toEqual('');
         });
+
+        it('should not display invalid input', function () {
+            let boardData = sampleBoardData();
+            const boardContainer = mount(<BoardContainer boardData={boardData}/>);
+
+            boardContainer.find('input').first().simulate('change', { target: { value: 'w' } });
+
+            expect(boardContainer.find('input').first().prop('value')).toEqual('');
+        });
     });
 });

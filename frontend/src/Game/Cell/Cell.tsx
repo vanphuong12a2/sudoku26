@@ -11,7 +11,9 @@ interface Props {
 const Cell = (props: Props) => {
 
     let handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        props.onCellChange(event.target.value ? Number(event.target.value) : EMPTY_CELL);
+        let parsedValue = Number(event.target.value);
+        let newValue = isNaN(parsedValue) ? EMPTY_CELL : parsedValue;
+        props.onCellChange(newValue);
     };
 
     return (
