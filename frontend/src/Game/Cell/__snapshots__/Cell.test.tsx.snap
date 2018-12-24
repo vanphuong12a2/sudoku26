@@ -11,3 +11,15 @@ exports[`<Cell /> Snapshots renders Cell correctly 1`] = `
   />
 </td>
 `;
+
+exports[`<Cell /> Snapshots renders empty Cell correctly 1`] = `
+<td>
+  <input
+    className="readonly"
+    maxLength={1}
+    onChange={[Function]}
+    readOnly={true}
+    value=""
+  />
+</td>
+`;

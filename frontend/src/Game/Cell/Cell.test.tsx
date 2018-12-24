@@ -16,6 +16,17 @@ describe('<Cell />', () => {
                 />);
             expect(cell.toJSON()).toMatchSnapshot();
         });
+
+        it('renders empty Cell correctly', () => {
+
+            const cell = create(
+                <Cell
+                    cellData={0}
+                    readOnly={true}
+                    onCellChange={jest.fn()}
+                />);
+            expect(cell.toJSON()).toMatchSnapshot();
+        });
     });
 
 });

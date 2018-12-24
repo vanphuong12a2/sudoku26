@@ -8,36 +8,23 @@ interface Props {
     onCellChange: (newValue: number) => void
 }
 
-interface State {
-    value: number
-}
+const Cell = (props: Props) => {
 
-class Cell extends React.Component<Props, State> {
-
-    constructor(props: Props) {
-        super(props);
-        this.state = {value: props.cellData};
-    }
-
-    private handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        let newValue = event.target.value ? Number(event.target.value) : EMPTY_CELL;
-        this.setState({value: newValue});
-        this.props.onCellChange(newValue);
+    let handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        props.onCellChange(event.target.value ? Number(event.target.value) : EMPTY_CELL);
     };
 
-    render() {
-        return (
-            <td>
-                <input
-                    className={this.props.readOnly ? 'readonly' : 'writable'}
-                    maxLength={1}
-                    readOnly={this.props.readOnly}
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                />
-            </td>
-        );
-    }
-}
+    return (
+        <td>
+            <input
+                className={props.readOnly ? 'readonly' : 'writable'}
+                maxLength={1}
+                readOnly={props.readOnly}
+                value={props.cellData != EMPTY_CELL ? props.cellData : ''}
+                onChange={handleChange}
+            />
+        </td>
+    );
+};
 
 export default Cell;
