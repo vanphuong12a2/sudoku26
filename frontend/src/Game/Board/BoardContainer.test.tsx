@@ -10,6 +10,6 @@ describe('<BoardContainer />', () => {
         const wrapper = shallow(<BoardContainer boardData={boardData}/>);
 
         expect(wrapper.find(Board).length).toBe(1);
-        expect(wrapper.find(Board).prop('currentBoard')).toBe(boardData);
+        expect(wrapper.find(Board).prop('currentBoard')).toEqual(boardData);
     });
 });

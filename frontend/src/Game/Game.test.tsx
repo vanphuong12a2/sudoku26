@@ -8,9 +8,12 @@ describe('<Game />', () => {
     describe('Snapshots', () => {
 
         it('renders game area correctly', () => {
-            const board = create(<Game boardData={sampleBoardData}/>);
+            const board = create(<Game
+                boardData={sampleBoardData()}
+                newGameOnClickHandler={jest.fn()}
+                clearBoardOnClickHandler={jest.fn()}
+            />);
             expect(board.toJSON()).toMatchSnapshot();
         });
     });
-
 });

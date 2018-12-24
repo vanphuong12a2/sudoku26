@@ -8,7 +8,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
     <tr>
       <td>
         <input
-          className=""
+          className="writable"
           maxLength={1}
           readOnly={false}
           value={1}
@@ -16,9 +16,9 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={2}
         />
       </td>
@@ -32,17 +32,17 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={4}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={5}
         />
       </td>
@@ -64,17 +64,17 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={8}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={9}
         />
       </td>
@@ -90,17 +90,17 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={2}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={3}
         />
       </td>
@@ -114,89 +114,15 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={5}
         />
       </td>
       <td>
         <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className=""
+          className="writable"
           maxLength={1}
           readOnly={false}
           value={6}
@@ -212,17 +138,17 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={8}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={9}
         />
       </td>
@@ -230,237 +156,15 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
     <tr>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={1}
         />
       </td>
       <td>
         <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          readOnly={true}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className=""
+          className="writable"
           maxLength={1}
           readOnly={false}
           value={2}
@@ -492,9 +196,9 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={6}
         />
       </td>
@@ -503,6 +207,154 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           className="readonly"
           maxLength={1}
           readOnly={true}
+          value={7}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={9}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={1}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={2}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={4}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={6}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={7}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={9}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={1}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={2}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={4}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={6}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
           value={7}
         />
       </td>
@@ -542,10 +394,42 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={4}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={6}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={7}
         />
       </td>
       <td>
@@ -553,6 +437,48 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           className="readonly"
           maxLength={1}
           readOnly={true}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={9}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={1}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={2}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
           value={4}
         />
       </td>
@@ -566,9 +492,9 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={6}
         />
       </td>
@@ -608,6 +534,80 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={2}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={4}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={6}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={7}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          readOnly={true}
+          value={9}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          readOnly={false}
+          value={1}
+        />
+      </td>
+      <td>
+        <input
           className="readonly"
           maxLength={1}
           readOnly={true}
@@ -624,17 +624,17 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={4}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={5}
         />
       </td>
@@ -648,25 +648,25 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={7}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={8}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
-          readOnly={true}
+          readOnly={false}
           value={9}
         />
       </td>

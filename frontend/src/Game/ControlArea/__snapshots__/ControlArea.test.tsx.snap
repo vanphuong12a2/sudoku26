@@ -4,10 +4,45 @@ exports[`<ControlArea /> Snapshots renders correctly 1`] = `
 <div
   className="control-area"
 >
-  <a
-    className="waves-effect waves-light btn"
-  >
-    New game
-  </a>
+  <fieldset>
+    <legend>
+      Game
+    </legend>
+    <a
+      className="waves-effect waves-light btn-small"
+      onClick={[MockFunction]}
+    >
+      New game
+    </a>
+    <a
+      className="waves-effect waves-light btn-small"
+      onClick={[Function]}
+    >
+      Show a hint
+    </a>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Solver
+    </legend>
+    <a
+      className="waves-effect waves-light btn-small"
+      onClick={[MockFunction]}
+    >
+      Clear
+    </a>
+    <a
+      className="waves-effect waves-light btn-small"
+      onClick={[Function]}
+    >
+      Validate
+    </a>
+    <a
+      className="waves-effect waves-light btn-small"
+      onClick={[Function]}
+    >
+      Show solution
+    </a>
+  </fieldset>
 </div>
 `;

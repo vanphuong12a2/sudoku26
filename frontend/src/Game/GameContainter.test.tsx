@@ -11,14 +11,16 @@ jest.mock('../common/boardFunctions', () => {
     };
 });
 
-
 describe('<BoardContainer />', () => {
 
-    it('should set the initial state to board data', () => {
+    it('should sent correct props to Game', () => {
         let boardData = new Array(9).fill(new Array(9).fill(undefined));
-        const wrapper = shallow(<GameContainer/>);
+        const component = shallow(<GameContainer/>);
+        const instance = component.instance() as GameContainer;
 
-        expect(wrapper.find(Game).length).toBe(1);
-        expect(wrapper.find(Game).prop('boardData')).toEqual(boardData);
+        expect(component.find(Game).length).toBe(1);
+        expect(component.find(Game).prop('boardData')).toEqual(boardData);
+        expect(component.find(Game).prop('newGameOnClickHandler')).toEqual(instance.newGameOnClickHandler);
+        expect(component.find(Game).prop('clearBoardOnClickHandler')).toEqual(instance.clearBoardOnClickHandler);
     });
 });

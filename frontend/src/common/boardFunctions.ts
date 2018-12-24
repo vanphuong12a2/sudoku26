@@ -1,7 +1,11 @@
 import {sampleBoardData} from './testData';
 
 const generateBoard = () => {
-    return sampleBoardData;
+    return sampleBoardData();
 };
 
-export {generateBoard}
+const generateEmptyBoard = () => {
+    return new Array(9).fill(new Array(9).fill(undefined));
+};
+
+export {generateBoard, generateEmptyBoard}

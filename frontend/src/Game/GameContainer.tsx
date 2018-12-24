@@ -1,23 +1,37 @@
 import React from 'react';
 import Game from './Game';
-import {generateBoard} from '../common/boardFunctions';
+import {generateBoard, generateEmptyBoard} from '../common/boardFunctions';
 
-interface Props {}
+interface Props {
+}
 
 interface State {
     currentBoard: (number | undefined)[][]
 }
 
-class GameContainer extends React.Component<Props, State>{
+class GameContainer extends React.Component<{}, State> {
 
     constructor(props: Props) {
         super(props);
         this.state = {currentBoard: generateBoard()}
     }
 
-    render(){
-        return (<Game boardData={this.state.currentBoard}/>);
+    render() {
+        return (
+            <Game
+                boardData={this.state.currentBoard}
+                newGameOnClickHandler={this.newGameOnClickHandler}
+                clearBoardOnClickHandler={this.clearBoardOnClickHandler}
+            />);
     }
+
+    public clearBoardOnClickHandler = () => {
+        this.setState({currentBoard: generateEmptyBoard()});
+    };
+
+    public newGameOnClickHandler = () => {
+        this.setState({currentBoard: generateBoard()});
+    };
 }
 
 export default GameContainer;

@@ -6,10 +6,10 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <header><h4>Sudoku 26</h4></header>
-                <body className='body-container'>
-                    <GameContainer/>
-                </body>
+                <header>
+                    <h3>Sudoku 26</h3>
+                </header>
+                <GameContainer/>
             </React.Fragment>
         );
     }

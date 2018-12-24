@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import './Board.css';
 
 
 interface CellProps {
     cellData: number | undefined
     readOnly: boolean
+    onCellChange: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
 const Cell = (props: CellProps) => {
@@ -14,7 +15,9 @@ const Cell = (props: CellProps) => {
                 className={props.readOnly ? 'readonly' : 'writable'}
                 maxLength={1}
                 readOnly={props.readOnly}
-                value={props.cellData}/>
+                value={props.cellData}
+                onChange={props.onCellChange}
+            />
         </td>
     );
 };
@@ -22,6 +25,7 @@ const Cell = (props: CellProps) => {
 interface Props {
     boardData: (number | undefined)[][]
     currentBoard: (number | undefined)[][]
+    onCellChange: (rowIndex: number, cellIndex: number) => (event: ChangeEvent<HTMLInputElement>) => void
 }
 
 const Board = (props: Props) => {
@@ -38,6 +42,7 @@ const Board = (props: Props) => {
                                         key={cellIndex}
                                         cellData={cellData}
                                         readOnly={props.boardData[rowIndex][cellIndex] != undefined}
+                                        onCellChange={props.onCellChange(rowIndex, cellIndex)}
                                     />
                                 );
                             })

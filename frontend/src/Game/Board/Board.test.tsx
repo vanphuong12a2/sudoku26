@@ -9,17 +9,22 @@ describe('<Board />', () => {
 
         it('renders boardData correctly', () => {
             let currentBoard = [
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9],
-                [1,2,3,4,5,6,7,8,9]
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                [1, 2, 3, 4, 5, 6, 7, 8, 9]
             ];
-            const board = create(<Board boardData={sampleBoardData} currentBoard={currentBoard}/>);
+            const board = create(
+                <Board
+                    boardData={sampleBoardData()}
+                    currentBoard={currentBoard}
+                    onCellChange={jest.fn()}
+                />);
             expect(board.toJSON()).toMatchSnapshot();
         });
     });

@@ -1,17 +1,23 @@
 import React from 'react';
 import BoardContainer from "./Board/BoardContainer";
 import ControlArea from "./ControlArea/ControlArea";
+import './Game.css'
 
 interface Props {
     boardData: (number | undefined)[][]
+    newGameOnClickHandler: () => void
+    clearBoardOnClickHandler: () => void
 }
 
 const Game = (props: Props) => {
     return (
-        <React.Fragment>
+        <div className='game-container'>
             <BoardContainer boardData={props.boardData}/>
-            <ControlArea/>
-        </React.Fragment>
+            <ControlArea
+                newGameOnClickHandler={props.newGameOnClickHandler}
+                clearBoardOnClickHandler={props.clearBoardOnClickHandler}
+            />
+        </div>
     );
 };
 

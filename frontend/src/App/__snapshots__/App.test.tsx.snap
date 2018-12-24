@@ -3,12 +3,12 @@
 exports[`<App /> Snapshots renders correctly 1`] = `
 Array [
   <header>
-    <h4>
+    <h3>
       Sudoku 26
-    </h4>
+    </h3>
   </header>,
-  <body
-    className="body-container"
+  <div
+    className="game-container"
   >
     <table
       className="main-board"
@@ -19,6 +19,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -26,6 +27,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -33,6 +35,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={2}
             />
@@ -41,6 +44,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -48,6 +52,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -55,6 +60,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={5}
             />
@@ -63,6 +69,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={4}
             />
@@ -71,6 +78,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -78,6 +86,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -87,6 +96,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={1}
             />
@@ -95,6 +105,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -102,6 +113,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -109,6 +121,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={8}
             />
@@ -117,6 +130,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -124,6 +138,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -131,6 +146,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={3}
             />
@@ -139,6 +155,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -146,6 +163,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -155,6 +173,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -162,6 +181,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -169,6 +189,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={7}
             />
@@ -177,6 +198,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={4}
             />
@@ -185,6 +207,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={1}
             />
@@ -193,6 +216,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -200,6 +224,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={8}
             />
@@ -208,6 +233,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -215,6 +241,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -224,6 +251,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -231,6 +259,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={4}
             />
@@ -239,6 +268,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -246,6 +276,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={7}
             />
@@ -254,6 +285,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={5}
             />
@@ -262,6 +294,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -269,6 +302,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -276,6 +310,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={6}
             />
@@ -284,6 +319,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -293,6 +329,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -300,6 +337,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={2}
             />
@@ -308,6 +346,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -315,6 +354,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -322,6 +362,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -329,6 +370,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={8}
             />
@@ -337,6 +379,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -344,6 +387,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={1}
             />
@@ -352,6 +396,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={4}
             />
@@ -362,6 +407,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={6}
             />
@@ -370,6 +416,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={8}
             />
@@ -378,6 +425,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -385,6 +433,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -392,6 +441,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -399,6 +449,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -406,6 +457,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -413,6 +465,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={7}
             />
@@ -421,6 +474,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -430,6 +484,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -437,6 +492,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -444,6 +500,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -451,6 +508,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -458,6 +516,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={2}
             />
@@ -466,6 +525,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -473,6 +533,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={1}
             />
@@ -481,6 +542,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={8}
             />
@@ -489,6 +551,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={5}
             />
@@ -499,6 +562,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={9}
             />
@@ -507,6 +571,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -514,6 +579,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -521,6 +587,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={5}
             />
@@ -529,6 +596,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -536,6 +604,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={3}
             />
@@ -544,6 +613,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -551,6 +621,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -558,6 +629,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={2}
             />
@@ -568,6 +640,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -575,6 +648,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={5}
             />
@@ -583,6 +657,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={8}
             />
@@ -591,6 +666,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -598,6 +674,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -605,6 +682,7 @@ Array [
             <input
               className="readonly"
               maxLength={1}
+              onChange={[Function]}
               readOnly={true}
               value={7}
             />
@@ -613,6 +691,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -620,6 +699,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -627,6 +707,7 @@ Array [
             <input
               className="writable"
               maxLength={1}
+              onChange={[Function]}
               readOnly={false}
             />
           </td>
@@ -636,12 +717,47 @@ Array [
     <div
       className="control-area"
     >
-      <a
-        className="waves-effect waves-light btn"
-      >
-        New game
-      </a>
+      <fieldset>
+        <legend>
+          Game
+        </legend>
+        <a
+          className="waves-effect waves-light btn-small"
+          onClick={[Function]}
+        >
+          New game
+        </a>
+        <a
+          className="waves-effect waves-light btn-small"
+          onClick={[Function]}
+        >
+          Show a hint
+        </a>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Solver
+        </legend>
+        <a
+          className="waves-effect waves-light btn-small"
+          onClick={[Function]}
+        >
+          Clear
+        </a>
+        <a
+          className="waves-effect waves-light btn-small"
+          onClick={[Function]}
+        >
+          Validate
+        </a>
+        <a
+          className="waves-effect waves-light btn-small"
+          onClick={[Function]}
+        >
+          Show solution
+        </a>
+      </fieldset>
     </div>
-  </body>,
+  </div>,
 ]
 `;

@@ -1,3 +1,23 @@
 .control-area {
     margin: 1em;
 }
+
+.control-area fieldset {
+    margin-bottom: 50px;
+}
+
+.control-area a {
+    display: block;
+}
+
+.control-area fieldset legend {
+    font-weight: bold;
+}
+
+.control-area fieldset a {
+    margin-bottom: 15px;
+}
+
+.control-area fieldset a:last-child {
+    margin-bottom: 0;
+}

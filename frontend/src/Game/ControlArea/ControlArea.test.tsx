@@ -6,7 +6,11 @@ describe('<ControlArea />', () => {
 
     describe('Snapshots', () => {
         it('renders correctly', () => {
-            const button = create(<ControlArea/>);
+            const button = create(
+                <ControlArea
+                    newGameOnClickHandler={jest.fn()}
+                    clearBoardOnClickHandler={jest.fn()}
+                />);
             expect(button.toJSON()).toMatchSnapshot();
         });
     });
