@@ -2,9 +2,10 @@ import React from 'react';
 import BoardContainer from "./Board/BoardContainer";
 import ControlArea from "./ControlArea/ControlArea";
 import './Game.css'
+import {CellType} from "./Cell/Cell";
 
 interface Props {
-    boardData: (number | undefined)[][]
+    boardData: CellType[][]
     newGameOnClickHandler: () => void
     clearBoardOnClickHandler: () => void
 }

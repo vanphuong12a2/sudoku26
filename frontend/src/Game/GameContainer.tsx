@@ -1,12 +1,13 @@
 import React from 'react';
 import Game from './Game';
 import {generateBoard, generateEmptyBoard} from '../common/boardFunctions';
+import {CellType} from "./Cell/Cell";
 
 interface Props {
 }
 
 interface State {
-    currentBoard: (number | undefined)[][]
+    currentBoard: CellType[][]
 }
 
 class GameContainer extends React.Component<{}, State> {

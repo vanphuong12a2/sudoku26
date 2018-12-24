@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cell /> Snapshots renders Cell correctly 1`] = `
+<td>
+  <input
+    className="readonly"
+    maxLength={1}
+    onChange={[Function]}
+    readOnly={true}
+    value={3}
+  />
+</td>
+`;

@@ -1,12 +1,13 @@
-import React, {ChangeEvent} from 'react';
+import React from 'react';
 import Board from './Board';
+import {CellType} from '../Cell/Cell';
 
 interface Props {
-    boardData: (number | undefined)[][]
+    boardData: (CellType)[][]
 }
 
 interface State {
-    currentBoard: (number | undefined)[][]
+    currentBoard: (CellType)[][]
 }
 
 class BoardContainer extends React.Component<Props, State> {
@@ -16,7 +17,7 @@ class BoardContainer extends React.Component<Props, State> {
         this.state = {currentBoard: this.copyBoard(this.props.boardData)};
     }
 
-    private copyBoard = (board: (number | undefined)[][]) => {
+    private copyBoard = (board: CellType[][]) => {
         return board.map(row => row.slice());
     };
 
@@ -36,8 +37,8 @@ class BoardContainer extends React.Component<Props, State> {
         )
     }
 
-    public onCellChange = (rowIndex: number, cellIndex: number) => (event: ChangeEvent<HTMLInputElement>) => {
-        this.state.currentBoard[rowIndex][cellIndex] = event.target.value ? Number(event.target.value) : undefined;
+    public onCellChange = (rowIndex: number, cellIndex: number) => (newValue: CellType) => {
+        this.state.currentBoard[rowIndex][cellIndex] = newValue;
         this.setState({currentBoard: this.state.currentBoard});
     }
 }

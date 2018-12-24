@@ -1,31 +1,11 @@
-import React, {ChangeEvent} from 'react';
+import React from 'react';
+import Cell, {CellType} from '../Cell/Cell';
 import './Board.css';
 
-
-interface CellProps {
-    cellData: number | undefined
-    readOnly: boolean
-    onCellChange: (event: ChangeEvent<HTMLInputElement>) => void
-}
-
-const Cell = (props: CellProps) => {
-    return (
-        <td>
-            <input
-                className={props.readOnly ? 'readonly' : 'writable'}
-                maxLength={1}
-                readOnly={props.readOnly}
-                value={props.cellData}
-                onChange={props.onCellChange}
-            />
-        </td>
-    );
-};
-
 interface Props {
-    boardData: (number | undefined)[][]
-    currentBoard: (number | undefined)[][]
-    onCellChange: (rowIndex: number, cellIndex: number) => (event: ChangeEvent<HTMLInputElement>) => void
+    boardData: CellType[][]
+    currentBoard: CellType[][]
+    onCellChange: (rowIndex: number, cellIndex: number) => (newValue: CellType) => void
 }
 
 const Board = (props: Props) => {
