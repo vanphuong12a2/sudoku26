@@ -1,11 +1,11 @@
 import React from 'react';
-import Cell, {CellType} from '../Cell/Cell';
+import Cell, {EMPTY_CELL} from '../Cell/Cell';
 import './Board.css';
 
 interface Props {
-    boardData: CellType[][]
-    currentBoard: CellType[][]
-    onCellChange: (rowIndex: number, cellIndex: number) => (newValue: CellType) => void
+    boardData: number[][]
+    currentBoard: number[][]
+    onCellChange: (rowIndex: number, cellIndex: number) => (newValue: number) => void
 }
 
 const Board = (props: Props) => {
@@ -21,7 +21,7 @@ const Board = (props: Props) => {
                                     <Cell
                                         key={cellIndex}
                                         cellData={cellData}
-                                        readOnly={props.boardData[rowIndex][cellIndex] != undefined}
+                                        readOnly={props.boardData[rowIndex][cellIndex] != EMPTY_CELL}
                                         onCellChange={props.onCellChange(rowIndex, cellIndex)}
                                     />
                                 );

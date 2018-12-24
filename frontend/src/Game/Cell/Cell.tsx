@@ -1,15 +1,15 @@
 import React, {ChangeEvent} from "react";
 
-export type CellType = number | undefined;
+export const EMPTY_CELL = 0;
 
 interface Props {
-    cellData: CellType
+    cellData: number
     readOnly: boolean
-    onCellChange: (newValue: CellType) => void
+    onCellChange: (newValue: number) => void
 }
 
 interface State {
-    value: CellType
+    value: number
 }
 
 class Cell extends React.Component<Props, State> {
@@ -20,7 +20,7 @@ class Cell extends React.Component<Props, State> {
     }
 
     private handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        let newValue = event.target.value ? Number(event.target.value) : undefined;
+        let newValue = event.target.value ? Number(event.target.value) : EMPTY_CELL;
         this.setState({value: newValue});
         this.props.onCellChange(newValue);
     };

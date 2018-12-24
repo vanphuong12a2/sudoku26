@@ -1,13 +1,12 @@
 import React from 'react';
 import Board from './Board';
-import {CellType} from '../Cell/Cell';
 
 interface Props {
-    boardData: (CellType)[][]
+    boardData: (number)[][]
 }
 
 interface State {
-    currentBoard: (CellType)[][]
+    currentBoard: (number)[][]
 }
 
 class BoardContainer extends React.Component<Props, State> {
@@ -17,7 +16,7 @@ class BoardContainer extends React.Component<Props, State> {
         this.state = {currentBoard: this.copyBoard(this.props.boardData)};
     }
 
-    private copyBoard = (board: CellType[][]) => {
+    private copyBoard = (board: number[][]) => {
         return board.map(row => row.slice());
     };
 
@@ -37,7 +36,7 @@ class BoardContainer extends React.Component<Props, State> {
         )
     }
 
-    public onCellChange = (rowIndex: number, cellIndex: number) => (newValue: CellType) => {
+    public onCellChange = (rowIndex: number, cellIndex: number) => (newValue: number) => {
         this.state.currentBoard[rowIndex][cellIndex] = newValue;
         this.setState({currentBoard: this.state.currentBoard});
     }
