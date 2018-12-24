@@ -3,5 +3,5 @@ Sudoku solver [![Build Status](https://travis-ci.org/vanphuong12a2/sudoku-solver
 https://sudoku26.herokuapp.com/
 
 
-####Running locally
+### Running locally
 `gradle bootRun`

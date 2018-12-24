@@ -30,12 +30,12 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
-task move_frontend(dependsOn: 'frontend:yarn_build') {
+task moveFrontend(dependsOn: 'frontend:yarn_build') {
     doLast {
         ant.move(file: 'frontend/build', tofile: 'build/resources/main/public')
     }
 }
 
 test.dependsOn('frontend:yarn_test')
-processResources.dependsOn(move_frontend)
+bootJar.dependsOn(moveFrontend)
 
