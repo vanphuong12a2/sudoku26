@@ -1,5 +1,7 @@
 package com.herokuapp.sudoku26.solver;
 
+import com.herokuapp.sudoku26.solver.exception.NoSolutionFoundException;
+
 import static com.herokuapp.sudoku26.solver.Direction.BACKTRACK;
 import static com.herokuapp.sudoku26.solver.Direction.FORWARD;
 
@@ -8,7 +10,7 @@ enum Direction {
     BACKTRACK
 }
 
-class ExactCoverSolver extends AbstractSolver {
+public class ExactCoverSolver extends AbstractSolver {
     private static final int CELL_CONSTRAIN = 0;
     private static final int BOX_CONSTRAIN = 1;
     private static final int ROW_CONSTRAIN = 2;
@@ -25,7 +27,7 @@ class ExactCoverSolver extends AbstractSolver {
     private int[] outputCandidateIndexes, outputConstrains;
     private int inputBoardValues;
 
-    ExactCoverSolver() {
+    public ExactCoverSolver() {
         setUpExactCoverMatrixForEmptyBoard();
     }
 

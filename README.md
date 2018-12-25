@@ -5,3 +5,6 @@ https://sudoku26.herokuapp.com/
 
 ### Running locally
 `gradle bootRun`
+
+### Sudoku samples
+http://magictour.free.fr/top1465

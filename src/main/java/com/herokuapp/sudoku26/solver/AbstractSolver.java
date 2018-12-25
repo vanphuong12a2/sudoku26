@@ -1,10 +1,15 @@
 package com.herokuapp.sudoku26.solver;
 
-abstract class AbstractSolver {
+import com.herokuapp.sudoku26.solver.exception.InvalidParameterException;
+import com.herokuapp.sudoku26.solver.exception.NoSolutionFoundException;
+import org.springframework.stereotype.Component;
+
+@Component
+public abstract class AbstractSolver {
 
     private static final int BOARD_SIZE = 81;
 
-    int[] solve(int[] inputBoard) throws InvalidParameterException, NoSolutionFoundException {
+    public int[] solve(int[] inputBoard) throws InvalidParameterException, NoSolutionFoundException {
         if (inputBoard.length != BOARD_SIZE) {
             throw new InvalidParameterException();
         } else {
@@ -15,5 +20,3 @@ abstract class AbstractSolver {
     abstract int[] search(int[] inputBoard) throws NoSolutionFoundException;
 }
 
-class NoSolutionFoundException extends Throwable {}
-class InvalidParameterException extends Throwable {}

@@ -1,5 +1,7 @@
 package com.herokuapp.sudoku26.solver;
 
+import com.herokuapp.sudoku26.solver.exception.InvalidParameterException;
+import com.herokuapp.sudoku26.solver.exception.NoSolutionFoundException;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
