@@ -31,6 +31,20 @@ describe('<GameContainer />', () => {
         });
     });
 
+    describe('refresh game button', () => {
+
+        it('should display a new game', function () {
+            const gameContainer = mount(<GameContainer/>);
+
+            gameContainer.find('input').first().simulate('change', { target: { value: '3' } });
+            expect(gameContainer.find('input').first().prop('value')).toEqual(3);
+
+            gameContainer.find('a').findWhere(wrapper => wrapper.text() === 'Refresh').simulate('click');
+
+            expect(gameContainer.find('input').first().prop('value')).toEqual('');
+        });
+    });
+
     describe('clear game button', () => {
 
         it('should display a new game', function () {

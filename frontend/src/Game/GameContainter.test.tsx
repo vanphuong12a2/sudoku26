@@ -5,7 +5,7 @@ import Game from './Game';
 
 jest.mock('../common/boardFunctions', () => {
     return {
-        generateEmptyBoard: () => {
+        generateBoard: () => {
             return new Array(9).fill(0).map(() => new Array(9).fill(1));
         }
     };
@@ -23,6 +23,7 @@ describe('<GameContainer />', () => {
         expect(component.find(Game).prop('currentBoard')).toEqual(boardData);
         expect(component.find(Game).prop('onCellChange')).toEqual(instance.onCellChange);
         expect(component.find(Game).prop('newGameOnClickHandler')).toEqual(instance.newGameOnClickHandler);
+        expect(component.find(Game).prop('refreshGameOnClickHandler')).toEqual(instance.refreshGameOnClickHandler);
         expect(component.find(Game).prop('clearBoardOnClickHandler')).toEqual(instance.clearBoardOnClickHandler);
     });
 });

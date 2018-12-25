@@ -10,15 +10,14 @@ exports[`<ControlArea /> Snapshots renders correctly 1`] = `
     </legend>
     <a
       className="waves-effect waves-light btn-small"
-      onClick={[MockFunction]}
     >
-      New game
+      Refresh
     </a>
     <a
       className="waves-effect waves-light btn-small"
-      onClick={[Function]}
+      onClick={[MockFunction]}
     >
-      Show a hint
+      New game
     </a>
   </fieldset>
   <fieldset>

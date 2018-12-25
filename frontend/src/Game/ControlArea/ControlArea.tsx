@@ -26,13 +26,14 @@ const ButtonComponent = (props: { button: Button }) => {
 interface Props {
     newGameOnClickHandler: () => void
     clearBoardOnClickHandler: () => void
+    refreshGameOnClickHandler: () => void
 }
 
 const ControlArea = (props: Props) => {
     let dummyHandler = () => {;};
     const gameButtons = [
-        new Button('New game', props.newGameOnClickHandler),
-        new Button('Show a hint', dummyHandler)
+        new Button('Refresh', props.refreshGameOnClickHandler),
+        new Button('New game', props.newGameOnClickHandler)
     ];
 
     const solverButtons = [

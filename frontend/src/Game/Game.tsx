@@ -7,6 +7,7 @@ interface Props {
     boardData: number[][]
     currentBoard: number[][]
     newGameOnClickHandler: () => void
+    refreshGameOnClickHandler: () => void
     clearBoardOnClickHandler: () => void
     onCellChange: (rowIndex: number, cellIndex: number) => (newValue: number) => void
 }
@@ -21,6 +22,7 @@ const Game = (props: Props) => {
             />
             <ControlArea
                 newGameOnClickHandler={props.newGameOnClickHandler}
+                refreshGameOnClickHandler={props.refreshGameOnClickHandler}
                 clearBoardOnClickHandler={props.clearBoardOnClickHandler}
             />
         </div>

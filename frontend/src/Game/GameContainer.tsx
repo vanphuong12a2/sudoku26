@@ -14,10 +14,10 @@ class GameContainer extends React.Component<{}, State> {
 
     constructor(props: Props) {
         super(props);
-        let newEmptyBoard = generateEmptyBoard();
+        let newBoard = generateBoard();
         this.state = {
-            boardData: newEmptyBoard,
-            currentBoard: this.copyBoard(newEmptyBoard)
+            boardData: newBoard,
+            currentBoard: this.copyBoard(newBoard)
         };
     }
 
@@ -28,6 +28,7 @@ class GameContainer extends React.Component<{}, State> {
                 currentBoard={this.state.currentBoard}
                 onCellChange={this.onCellChange}
                 newGameOnClickHandler={this.newGameOnClickHandler}
+                refreshGameOnClickHandler={this.refreshGameOnClickHandler}
                 clearBoardOnClickHandler={this.clearBoardOnClickHandler}
             />);
     }
@@ -40,6 +41,10 @@ class GameContainer extends React.Component<{}, State> {
     public newGameOnClickHandler = () => {
         let newBoard = generateBoard();
         this.setState({boardData: newBoard, currentBoard: this.copyBoard(newBoard)});
+    };
+
+    public refreshGameOnClickHandler = () => {
+        this.setState({currentBoard: this.copyBoard(this.state.boardData)});
     };
 
     public onCellChange = (rowIndex: number, cellIndex: number) => (newValue: number) => {
