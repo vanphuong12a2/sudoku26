@@ -5,13 +5,13 @@ import Game from './Game';
 
 jest.mock('../common/boardFunctions', () => {
     return {
-        generateBoard: () => {
+        generateEmptyBoard: () => {
             return new Array(9).fill(0).map(() => new Array(9).fill(1));
         }
     };
 });
 
-describe('<BoardContainer />', () => {
+describe('<GameContainer />', () => {
 
     it('should sent correct props to Game', () => {
         let boardData = new Array(9).fill(0).map(() => new Array(9).fill(1));
@@ -20,6 +20,8 @@ describe('<BoardContainer />', () => {
 
         expect(component.find(Game).length).toBe(1);
         expect(component.find(Game).prop('boardData')).toEqual(boardData);
+        expect(component.find(Game).prop('currentBoard')).toEqual(boardData);
+        expect(component.find(Game).prop('onCellChange')).toEqual(instance.onCellChange);
         expect(component.find(Game).prop('newGameOnClickHandler')).toEqual(instance.newGameOnClickHandler);
         expect(component.find(Game).prop('clearBoardOnClickHandler')).toEqual(instance.clearBoardOnClickHandler);
     });

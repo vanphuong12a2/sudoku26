@@ -10,6 +10,8 @@ describe('<Game />', () => {
         it('renders game area correctly', () => {
             const board = create(<Game
                 boardData={sampleBoardData()}
+                currentBoard={sampleBoardData()}
+                onCellChange={jest.fn()}
                 newGameOnClickHandler={jest.fn()}
                 clearBoardOnClickHandler={jest.fn()}
             />);

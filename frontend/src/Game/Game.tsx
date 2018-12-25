@@ -1,18 +1,24 @@
 import React from 'react';
-import BoardContainer from "./Board/BoardContainer";
-import ControlArea from "./ControlArea/ControlArea";
+import ControlArea from './ControlArea/ControlArea';
 import './Game.css'
+import Board from './Board/Board';
 
 interface Props {
     boardData: number[][]
+    currentBoard: number[][]
     newGameOnClickHandler: () => void
     clearBoardOnClickHandler: () => void
+    onCellChange: (rowIndex: number, cellIndex: number) => (newValue: number) => void
 }
 
 const Game = (props: Props) => {
     return (
         <div className='game-container'>
-            <BoardContainer boardData={props.boardData}/>
+            <Board
+                boardData={props.boardData}
+                currentBoard={props.currentBoard}
+                onCellChange={props.onCellChange}
+            />
             <ControlArea
                 newGameOnClickHandler={props.newGameOnClickHandler}
                 clearBoardOnClickHandler={props.clearBoardOnClickHandler}
