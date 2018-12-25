@@ -1,4 +1,4 @@
-import React, {ChangeEvent} from "react";
+import React, {ChangeEvent} from 'react';
 
 export const EMPTY_CELL = 0;
 
@@ -10,9 +10,9 @@ interface Props {
 
 const Cell = (props: Props) => {
 
-    let handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        let parsedValue = Number(event.target.value);
-        let newValue = isNaN(parsedValue) ? EMPTY_CELL : parsedValue;
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const parsedValue = Number(event.target.value);
+        const newValue = isNaN(parsedValue) ? EMPTY_CELL : parsedValue;
         props.onCellChange(newValue);
     };
 
@@ -22,7 +22,7 @@ const Cell = (props: Props) => {
                 className={props.readOnly ? 'readonly' : 'writable'}
                 maxLength={1}
                 readOnly={props.readOnly}
-                value={props.cellData != EMPTY_CELL ? props.cellData : ''}
+                value={props.cellData !== EMPTY_CELL ? props.cellData : ''}
                 onChange={handleChange}
             />
         </td>

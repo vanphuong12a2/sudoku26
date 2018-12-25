@@ -2,9 +2,6 @@ import React from 'react';
 import Game from './Game';
 import {generateBoard, generateEmptyBoard} from '../common/boardFunctions';
 
-interface Props {
-}
-
 interface State {
     boardData: number[][]
     currentBoard: number[][]
@@ -12,16 +9,16 @@ interface State {
 
 class GameContainer extends React.Component<{}, State> {
 
-    constructor(props: Props) {
+    constructor(props: {}) {
         super(props);
-        let newBoard = generateBoard();
+        const newBoard = generateBoard();
         this.state = {
             boardData: newBoard,
             currentBoard: this.copyBoard(newBoard)
         };
     }
 
-    render() {
+    public render() {
         return (
             <Game
                 boardData={this.state.boardData}
@@ -34,12 +31,12 @@ class GameContainer extends React.Component<{}, State> {
     }
 
     public clearBoardOnClickHandler = () => {
-        let newEmptyBoard = generateEmptyBoard();
+        const newEmptyBoard = generateEmptyBoard();
         this.setState({boardData: newEmptyBoard, currentBoard: this.copyBoard(newEmptyBoard)});
     };
 
     public newGameOnClickHandler = () => {
-        let newBoard = generateBoard();
+        const newBoard = generateBoard();
         this.setState({boardData: newBoard, currentBoard: this.copyBoard(newBoard)});
     };
 

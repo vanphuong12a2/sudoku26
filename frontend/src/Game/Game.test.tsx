@@ -23,13 +23,13 @@ describe('<Game />', () => {
         });
     });
 
-    it('should send correct props to control area', function () {
+    it('should send correct props to control area', () => {
 
-        let boardData = sampleBoardData();
-        let onCellChange = jest.fn();
-        let newGameOnClickHandler = jest.fn();
-        let refreshGameOnClickHandler = jest.fn();
-        let clearBoardOnClickHandler = jest.fn();
+        const boardData = sampleBoardData();
+        const onCellChange = jest.fn();
+        const newGameOnClickHandler = jest.fn();
+        const refreshGameOnClickHandler = jest.fn();
+        const clearBoardOnClickHandler = jest.fn();
 
         const component = shallow(<Game
             boardData={boardData}

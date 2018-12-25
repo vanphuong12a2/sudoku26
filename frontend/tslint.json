@@ -1,8 +1,10 @@
 {
-  "extends": ["tslint:recommended", "tslint-react"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
-    "no-console": [false],
-    "ordered-imports": [false]
+    "no-console": [true],
+    "ordered-imports": [false],
+    "quotemark": [true, "single"],
+    "interface-name": [false]
   },
   "linterOptions": {
     "exclude": [

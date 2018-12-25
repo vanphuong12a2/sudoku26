@@ -16,8 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true react-scripts test",
-    "test-watch": "react-scripts test",
+    "test": "tslint --project '.' && CI=true react-scripts test",
+    "test-watch": "tslint --project '.' && react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,6 +37,7 @@
     "enzyme-adapter-react-16": "^1.7.1",
     "react-test-renderer": "^16.7.0",
     "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
     "tslint-react": "^3.6.0"
   }
 }

@@ -21,7 +21,7 @@ const Board = (props: Props) => {
                                     <Cell
                                         key={cellIndex}
                                         cellData={cellData}
-                                        readOnly={props.boardData[rowIndex][cellIndex] != EMPTY_CELL}
+                                        readOnly={props.boardData[rowIndex][cellIndex] !== EMPTY_CELL}
                                         onCellChange={props.onCellChange(rowIndex, cellIndex)}
                                     />
                                 );

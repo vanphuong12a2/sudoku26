@@ -3,7 +3,7 @@ import './App.css'
 import GameContainer from '../Game/GameContainer';
 
 class App extends Component {
-    render() {
+    public render() {
         return (
             <React.Fragment>
                 <header>

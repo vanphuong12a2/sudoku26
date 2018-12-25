@@ -17,7 +17,7 @@ const ControlFieldSet = (props: { legend: string, buttons: Button[] }) => {
 
 const ButtonComponent = (props: { button: Button }) => {
     return (
-        <a className="waves-effect waves-light btn-small" onClick={props.button.onClickHandler}>
+        <a className='waves-effect waves-light btn-small' onClick={props.button.onClickHandler}>
             {props.button.name}
         </a>
     );
@@ -30,7 +30,7 @@ interface Props {
 }
 
 const ControlArea = (props: Props) => {
-    let dummyHandler = () => {;};
+    const dummyHandler = () => {;};
     const gameButtons = [
         new Button('Refresh', props.refreshGameOnClickHandler),
         new Button('New game', props.newGameOnClickHandler)

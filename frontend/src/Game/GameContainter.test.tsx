@@ -7,14 +7,14 @@ jest.mock('../common/boardFunctions', () => {
     return {
         generateBoard: () => {
             return new Array(9).fill(0).map(() => new Array(9).fill(1));
-        }
+        },
     };
 });
 
 describe('<GameContainer />', () => {
 
     it('should sent correct props to Game', () => {
-        let boardData = new Array(9).fill(0).map(() => new Array(9).fill(1));
+        const boardData = new Array(9).fill(0).map(() => new Array(9).fill(1));
         const component = shallow(<GameContainer/>);
         const instance = component.instance() as GameContainer;
 

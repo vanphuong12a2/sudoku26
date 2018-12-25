@@ -12,7 +12,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={1}
+          value=""
         />
       </td>
       <td>
@@ -21,7 +21,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={2}
+          value=""
         />
       </td>
       <td>
@@ -30,7 +30,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
-          value={3}
+          value={2}
         />
       </td>
       <td>
@@ -39,7 +39,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={4}
+          value=""
         />
       </td>
       <td>
@@ -48,6 +48,15 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
           value={5}
         />
       </td>
@@ -57,16 +66,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={7}
+          value={4}
         />
       </td>
       <td>
@@ -75,7 +75,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={8}
+          value=""
         />
       </td>
       <td>
@@ -84,7 +84,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={9}
+          value=""
         />
       </td>
     </tr>
@@ -104,7 +104,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={2}
+          value=""
         />
       </td>
       <td>
@@ -113,209 +113,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={7}
+          value=""
         />
       </td>
       <td>
@@ -333,7 +131,43 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={9}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
         />
       </td>
     </tr>
@@ -344,16 +178,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={2}
+          value=""
         />
       </td>
       <td>
@@ -362,200 +187,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={8}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={1}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={6}
+          value=""
         />
       </td>
       <td>
@@ -573,20 +205,9 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
-          value={8}
+          value={4}
         />
       </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={9}
-        />
-      </td>
-    </tr>
-    <tr>
       <td>
         <input
           className="readonly"
@@ -602,16 +223,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={3}
+          value=""
         />
       </td>
       <td>
@@ -620,52 +232,25 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
-          value={4}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={5}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={6}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
-          value={7}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
           value={8}
         />
       </td>
       <td>
         <input
-          className="readonly"
+          className="writable"
           maxLength={1}
           onChange={[Function]}
-          readOnly={true}
-          value={9}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
         />
       </td>
     </tr>
@@ -676,7 +261,7 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={1}
+          value=""
         />
       </td>
       <td>
@@ -685,24 +270,6 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
-          value={2}
-        />
-      </td>
-      <td>
-        <input
-          className="readonly"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={true}
-          value={3}
-        />
-      </td>
-      <td>
-        <input
-          className="writable"
-          maxLength={1}
-          onChange={[Function]}
-          readOnly={false}
           value={4}
         />
       </td>
@@ -712,7 +279,43 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={7}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
           value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
         />
       </td>
       <td>
@@ -730,7 +333,27 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
-          value={7}
+          value=""
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={2}
         />
       </td>
       <td>
@@ -739,6 +362,33 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
           value={8}
         />
       </td>
@@ -748,7 +398,357 @@ exports[`<Board /> Snapshots renders boardData correctly 1`] = `
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={1}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={4}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={6}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={7}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={2}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={1}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={5}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
           value={9}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={3}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={2}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={5}
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={8}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="readonly"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={true}
+          value={7}
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
+        />
+      </td>
+      <td>
+        <input
+          className="writable"
+          maxLength={1}
+          onChange={[Function]}
+          readOnly={false}
+          value=""
         />
       </td>
     </tr>
