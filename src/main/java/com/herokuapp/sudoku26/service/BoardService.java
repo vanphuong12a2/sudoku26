@@ -3,19 +3,21 @@ package com.herokuapp.sudoku26.service;
 import com.herokuapp.sudoku26.solver.AbstractSolver;
 import com.herokuapp.sudoku26.solver.exception.InvalidParameterException;
 import com.herokuapp.sudoku26.solver.exception.NoSolutionFoundException;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 import static java.util.Collections.emptyList;
 
 @Service
+@Slf4j
 public class BoardService {
     private static final String SUDOKU_SAMPLES = "sudokuSamples.txt";
     private final AbstractSolver solver;
@@ -34,9 +36,11 @@ public class BoardService {
 
     private List<String> getSampleBoards() {
         try {
-            Path samplesPath = Paths.get(Objects.requireNonNull(getClass().getClassLoader().getResource(SUDOKU_SAMPLES)).toURI());
-            return Files.readAllLines(samplesPath);
+            ClassPathResource resource = new ClassPathResource(SUDOKU_SAMPLES);
+            InputStreamReader inputStreamReader = new InputStreamReader(resource.getInputStream());
+            return new BufferedReader(inputStreamReader).lines().collect(Collectors.toList());
         } catch (Exception e) {
+            log.error("Fail to get resources", e);
             return emptyList();
         }
     }

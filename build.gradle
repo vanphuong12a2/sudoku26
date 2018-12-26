@@ -39,11 +39,6 @@ dependencies {
 task moveFrontend(dependsOn: 'frontend:yarn_build') {
     doLast {
         ant.move(file: 'frontend/build', tofile: 'build/resources/main/public')
-		// debug
-		def files =  fileTree("build/resources/main").filter { it.isFile() }.files.name
-		files.each {
-			println it
-		}
     }
 }
 
