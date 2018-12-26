@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css'
 import GameContainer from '../Game/GameContainer';
+import ErrorBoundary from './ErrorBoundary';
 
 class App extends Component {
     public render() {
@@ -9,7 +10,9 @@ class App extends Component {
                 <header>
                     <h3>Sudoku 26</h3>
                 </header>
-                <GameContainer/>
+                <ErrorBoundary>
+                    <GameContainer/>
+                </ErrorBoundary>
             </React.Fragment>
         );
     }
