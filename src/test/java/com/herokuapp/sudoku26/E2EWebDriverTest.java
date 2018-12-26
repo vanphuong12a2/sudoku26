@@ -1,7 +1,9 @@
 package com.herokuapp.sudoku26;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
@@ -18,26 +20,34 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(webEnvironment = RANDOM_PORT, classes = Application.class)
 public class E2EWebDriverTest {
     private static final int WEBDRIVER_WAIT_TIMEOUT_IN_SECONDS = 30;
-    private WebDriver webdriver;
+    private WebDriver driver;
 
     @LocalServerPort
     protected String port;
 
+
+    @BeforeClass
+    public static void setUpClass() {
+        ChromeDriverManager.getInstance().setup();
+    }
+
     @Before
     public void setUp() {
-        webdriver = new ChromeDriver();
+        driver = new ChromeDriver();
     }
 
     @After
-    public void tearDown(){
-        webdriver.close();
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @Test
     public void shouldShowARandomBoardWhenOpen() {
-        webdriver.get(String.format("http://localhost:%s/", port));
+        driver.get(String.format("http://localhost:%s/", port));
 
-        new WebDriverWait(webdriver, WEBDRIVER_WAIT_TIMEOUT_IN_SECONDS)
+        new WebDriverWait(driver, WEBDRIVER_WAIT_TIMEOUT_IN_SECONDS)
                 .until(searchContext -> searchContext.findElements(By.tagName("input")).size() > 0);
     }
 }

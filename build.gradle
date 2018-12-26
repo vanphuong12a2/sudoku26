@@ -32,6 +32,7 @@ dependencies {
 	testCompile('org.seleniumhq.selenium:selenium-support')
 	testCompile('org.seleniumhq.selenium:selenium-chrome-driver')
 	testCompile('org.seleniumhq.selenium:selenium-remote-driver')
+	testCompile('io.github.bonigarcia:webdrivermanager:2.1.0')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
@@ -41,6 +42,8 @@ task moveFrontend(dependsOn: 'frontend:yarn_build') {
     }
 }
 
-test.dependsOn('frontend:yarn_test')
+test.dependsOn('frontend:yarn_test', moveFrontend)
 bootJar.dependsOn(moveFrontend)
-bootRun.dependsOn(build)
+
+// When testing frontend changes
+// bootRun.dependsOn(build)
