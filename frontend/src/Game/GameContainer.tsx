@@ -57,7 +57,7 @@ class GameContainer extends React.Component<{}, State> {
         solveBoard(this.state.currentBoard).then(
             solutionBoard => {
                 this.setState({
-                    boardData: this.copyBoard(solutionBoard),
+                    boardData: this.state.currentBoard,
                     currentBoard: this.copyBoard(solutionBoard),
                     loading: false
                 });

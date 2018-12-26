@@ -78,6 +78,7 @@ describe('<GameContainer />', () => {
             gameContainer.update();
 
             expect(gameContainer.find('input').first().prop('value')).toEqual(4);
+            expect(gameContainer.find('input').first().prop('readOnly')).toEqual(false);
         });
     });
 
