@@ -27,10 +27,10 @@ interface Props {
     newGameOnClickHandler: () => void
     clearBoardOnClickHandler: () => void
     refreshGameOnClickHandler: () => void
+    solveGameOnClickHandler: () => void
 }
 
 const ControlArea = (props: Props) => {
-    const dummyHandler = () => {;};
     const gameButtons = [
         new Button('Refresh', props.refreshGameOnClickHandler),
         new Button('New game', props.newGameOnClickHandler)
@@ -38,7 +38,7 @@ const ControlArea = (props: Props) => {
 
     const solverButtons = [
         new Button('Clear all', props.clearBoardOnClickHandler),
-        new Button('Show solution', dummyHandler)
+        new Button('Show solution', props.solveGameOnClickHandler)
     ];
     return (
         <div className='control-area'>

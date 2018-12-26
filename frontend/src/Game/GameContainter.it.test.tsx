@@ -60,6 +60,27 @@ describe('<GameContainer />', () => {
         });
     });
 
+    describe('show solution button', () => {
+
+        it('should display the solution', async () => {
+
+            const solutionBoard = new Array(9).fill(0).map(() => new Array(9).fill(4));
+            const solutionPromise = Promise.resolve(solutionBoard);
+            Object.defineProperty(boardFunctions, 'solveBoard', {value: jest.fn((boardData: number[][]) => solutionPromise)});
+
+            const gameContainer = mount(<GameContainer/>);
+            await promise;
+            gameContainer.update();
+
+            gameContainer.find('a').findWhere(wrapper => wrapper.text() === 'Show solution').simulate('click');
+
+            await solutionPromise;
+            gameContainer.update();
+
+            expect(gameContainer.find('input').first().prop('value')).toEqual(4);
+        });
+    });
+
     describe('user fills in value to the board', () => {
 
         it('should display the number', async () => {

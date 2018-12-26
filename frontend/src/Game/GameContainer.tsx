@@ -1,6 +1,6 @@
 import React from 'react';
 import Game from './Game';
-import {generateBoard, generateEmptyBoard} from '../common/boardFunctions';
+import {generateBoard, generateEmptyBoard, solveBoard} from '../common/boardFunctions';
 
 interface State {
     boardData: number[][]
@@ -43,12 +43,26 @@ class GameContainer extends React.Component<{}, State> {
                 newGameOnClickHandler={this.newGameOnClickHandler}
                 refreshGameOnClickHandler={this.refreshGameOnClickHandler}
                 clearBoardOnClickHandler={this.clearBoardOnClickHandler}
+                solveGameOnClickHandler={this.solveGameOnClickHandler}
             />);
     }
 
     public clearBoardOnClickHandler = () => {
         const newEmptyBoard = generateEmptyBoard();
         this.setState({boardData: newEmptyBoard, currentBoard: this.copyBoard(newEmptyBoard)});
+    };
+
+    public solveGameOnClickHandler = () => {
+        this.setState({loading: true});
+        solveBoard(this.state.currentBoard).then(
+            solutionBoard => {
+                this.setState({
+                    boardData: this.copyBoard(solutionBoard),
+                    currentBoard: this.copyBoard(solutionBoard),
+                    loading: false
+                });
+            }
+        ).catch(() => this.setState({loading: false}));
     };
 
     public newGameOnClickHandler = () => {
@@ -61,8 +75,7 @@ class GameContainer extends React.Component<{}, State> {
                     loading: false
                 });
             }
-        ).catch(() => this.setState({loading: false}))
-        ;
+        ).catch(() => this.setState({loading: false}));
     };
 
     public refreshGameOnClickHandler = () => {

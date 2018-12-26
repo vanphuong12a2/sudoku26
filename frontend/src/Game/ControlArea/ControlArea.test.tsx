@@ -10,6 +10,8 @@ describe('<ControlArea />', () => {
                 <ControlArea
                     newGameOnClickHandler={jest.fn()}
                     clearBoardOnClickHandler={jest.fn()}
+                    refreshGameOnClickHandler={jest.fn()}
+                    solveGameOnClickHandler={jest.fn()}
                 />);
             expect(button.toJSON()).toMatchSnapshot();
         });

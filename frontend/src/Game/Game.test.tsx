@@ -19,6 +19,7 @@ describe('<Game />', () => {
                 newGameOnClickHandler={jest.fn()}
                 refreshGameOnClickHandler={jest.fn()}
                 clearBoardOnClickHandler={jest.fn()}
+                solveGameOnClickHandler={jest.fn()}
             />);
             expect(board.toJSON()).toMatchSnapshot();
         });
@@ -31,6 +32,7 @@ describe('<Game />', () => {
         const newGameOnClickHandler = jest.fn();
         const refreshGameOnClickHandler = jest.fn();
         const clearBoardOnClickHandler = jest.fn();
+        const solveGameOnClickHandler = jest.fn();
 
         const component = shallow(<Game
             loading={false}
@@ -40,6 +42,7 @@ describe('<Game />', () => {
             newGameOnClickHandler={newGameOnClickHandler}
             refreshGameOnClickHandler={refreshGameOnClickHandler}
             clearBoardOnClickHandler={clearBoardOnClickHandler}
+            solveGameOnClickHandler={solveGameOnClickHandler}
         />);
 
         expect(component.find(Board).prop('loading')).toEqual(false);
@@ -49,5 +52,6 @@ describe('<Game />', () => {
         expect(component.find(ControlArea).prop('newGameOnClickHandler')).toEqual(newGameOnClickHandler);
         expect(component.find(ControlArea).prop('refreshGameOnClickHandler')).toEqual(refreshGameOnClickHandler);
         expect(component.find(ControlArea).prop('clearBoardOnClickHandler')).toEqual(clearBoardOnClickHandler);
+        expect(component.find(ControlArea).prop('solveGameOnClickHandler')).toEqual(solveGameOnClickHandler);
     });
 });

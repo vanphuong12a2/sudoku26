@@ -10,6 +10,7 @@ interface Props {
     newGameOnClickHandler: () => void
     refreshGameOnClickHandler: () => void
     clearBoardOnClickHandler: () => void
+    solveGameOnClickHandler: () => void
     onCellChange: (rowIndex: number, cellIndex: number) => (newValue: number) => void
 }
 
@@ -27,6 +28,7 @@ const Game = (props: Props) => {
                     newGameOnClickHandler={props.newGameOnClickHandler}
                     refreshGameOnClickHandler={props.refreshGameOnClickHandler}
                     clearBoardOnClickHandler={props.clearBoardOnClickHandler}
+                    solveGameOnClickHandler={props.solveGameOnClickHandler}
                 />
             </div>
         </React.Fragment>

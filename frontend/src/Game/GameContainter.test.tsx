@@ -40,5 +40,6 @@ describe('<GameContainer />', () => {
         expect(component.find(Game).prop('newGameOnClickHandler')).toEqual(instance.newGameOnClickHandler);
         expect(component.find(Game).prop('refreshGameOnClickHandler')).toEqual(instance.refreshGameOnClickHandler);
         expect(component.find(Game).prop('clearBoardOnClickHandler')).toEqual(instance.clearBoardOnClickHandler);
+        expect(component.find(Game).prop('solveGameOnClickHandler')).toEqual(instance.solveGameOnClickHandler);
     });
 });

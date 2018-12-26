@@ -791,7 +791,7 @@ exports[`<Game /> Snapshots renders game area correctly when not loading 1`] = `
       </a>
       <a
         className="waves-effect waves-light btn-small"
-        onClick={[Function]}
+        onClick={[MockFunction]}
       >
         Show solution
       </a>

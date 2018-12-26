@@ -1,5 +1,6 @@
 import {EMPTY_CELL} from '../Game/Cell/Cell';
 
+const solveUrl = '/api/board/solved';
 const generateUrl = '/api/board/random';
 
 function convertTo2DArray(board: number[]) {
@@ -9,6 +10,12 @@ function convertTo2DArray(board: number[]) {
     }
     return newArr;
 }
+
+const solveBoard = async (boardData: number[][]) => {
+    return fetch(`${solveUrl}?inputBoard=${boardData.join()}`)
+        .then(response => response.json())
+        .then(convertTo2DArray);
+};
 
 const generateBoard = async () => {
     return fetch(generateUrl)
@@ -20,4 +27,4 @@ const generateEmptyBoard = () => {
     return new Array(9).fill(0).map(() => new Array(9).fill(EMPTY_CELL));
 };
 
-export {generateBoard, generateEmptyBoard};
+export {solveBoard, generateBoard, generateEmptyBoard};
