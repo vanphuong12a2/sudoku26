@@ -23,11 +23,15 @@ repositories {
 	mavenCentral()
 }
 
-
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	compileOnly('org.projectlombok:lombok')
+	testCompile('io.rest-assured:rest-assured:3.0.3')
+	testCompile('org.seleniumhq.selenium:selenium-api')
+	testCompile('org.seleniumhq.selenium:selenium-support')
+	testCompile('org.seleniumhq.selenium:selenium-chrome-driver')
+	testCompile('org.seleniumhq.selenium:selenium-remote-driver')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
