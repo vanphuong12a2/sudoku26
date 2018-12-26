@@ -1,7 +1,6 @@
 package com.herokuapp.sudoku26.controller;
 
 import com.herokuapp.sudoku26.service.BoardService;
-import com.herokuapp.sudoku26.solver.AbstractSolver;
 import com.herokuapp.sudoku26.solver.exception.InvalidParameterException;
 import com.herokuapp.sudoku26.solver.exception.NoSolutionFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SudokuApiController {
     private final BoardService boardService;
-    private final AbstractSolver solver;
 
     @Autowired
-    public SudokuApiController(BoardService boardService, AbstractSolver solver) {
+    public SudokuApiController(BoardService boardService) {
         this.boardService = boardService;
-        this.solver = solver;
     }
 
     @GetMapping("/board/random")
@@ -33,7 +30,7 @@ public class SudokuApiController {
 
     @GetMapping("/board/solved")
     public int[] solveBoard(@PathVariable @RequestParam int[] inputBoard) throws InvalidParameterException, NoSolutionFoundException {
-        return solver.solve(inputBoard);
+        return boardService.solve(inputBoard);
     }
 
     @ExceptionHandler(InvalidParameterException.class)

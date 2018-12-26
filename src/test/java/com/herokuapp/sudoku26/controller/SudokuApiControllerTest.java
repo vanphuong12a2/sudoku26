@@ -1,7 +1,6 @@
 package com.herokuapp.sudoku26.controller;
 
 import com.herokuapp.sudoku26.service.BoardService;
-import com.herokuapp.sudoku26.solver.AbstractSolver;
 import com.herokuapp.sudoku26.solver.exception.InvalidParameterException;
 import com.herokuapp.sudoku26.solver.exception.NoSolutionFoundException;
 import org.junit.Before;
@@ -32,12 +31,10 @@ public class SudokuApiControllerTest {
 
     @Mock
     BoardService mockBoardService;
-    @Mock
-    AbstractSolver mockSolver;
 
     @Before
     public void setUp() {
-        sudokuApiController = new SudokuApiController(mockBoardService, mockSolver);
+        sudokuApiController = new SudokuApiController(mockBoardService);
         mockMvc = standaloneSetup(sudokuApiController).build();
     }
 
@@ -68,7 +65,7 @@ public class SudokuApiControllerTest {
 
     @Test
     public void shouldReturnBadRequestForInvalidInputBoard() throws Exception, InvalidParameterException, NoSolutionFoundException {
-        when(mockSolver.solve(new int[]{1,2,3})).thenThrow(new InvalidParameterException());
+        when(mockBoardService.solve(new int[]{1,2,3})).thenThrow(new InvalidParameterException());
 
         mockMvc.perform(get("/api/board/solved?inputBoard=1,2,3"))
                 .andExpect(status().is(HttpStatus.BAD_REQUEST.value()));
@@ -76,7 +73,7 @@ public class SudokuApiControllerTest {
 
     @Test
     public void shouldReturnNotFoundForInputBoardWithoutSolution() throws Exception, InvalidParameterException, NoSolutionFoundException {
-        when(mockSolver.solve(new int[]{1,2,3})).thenThrow(new NoSolutionFoundException());
+        when(mockBoardService.solve(new int[]{1,2,3})).thenThrow(new NoSolutionFoundException());
 
         mockMvc.perform(get("/api/board/solved?inputBoard=1,2,3"))
                 .andExpect(status().is(HttpStatus.NOT_FOUND.value()));
@@ -84,7 +81,7 @@ public class SudokuApiControllerTest {
 
     @Test
     public void shouldReturnSolvedBoardForValidInputBoardWithSolution() throws Exception, InvalidParameterException, NoSolutionFoundException {
-        when(mockSolver.solve(new int[]{1,2,3})).thenReturn(new int[]{4,5,6});
+        when(mockBoardService.solve(new int[]{1,2,3})).thenReturn(new int[]{4,5,6});
 
         mockMvc.perform(get("/api/board/solved?inputBoard=1,2,3"))
                 .andExpect(status().is2xxSuccessful())
