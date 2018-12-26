@@ -5,17 +5,32 @@ import {generateBoard, generateEmptyBoard} from '../common/boardFunctions';
 interface State {
     boardData: number[][]
     currentBoard: number[][]
+    loading: boolean
 }
 
 class GameContainer extends React.Component<{}, State> {
 
     constructor(props: {}) {
         super(props);
-        const newBoard = generateBoard();
+        const newBoard = generateEmptyBoard();
         this.state = {
             boardData: newBoard,
-            currentBoard: this.copyBoard(newBoard)
+            currentBoard: this.copyBoard(newBoard),
+            loading: false
         };
+    }
+
+    public componentDidMount() {
+        this.setState({loading: true});
+        generateBoard().then(
+            randomBoard => {
+                this.setState({
+                    boardData: randomBoard,
+                    currentBoard: this.copyBoard(randomBoard),
+                    loading: false
+                });
+            }
+        );
     }
 
     public render() {
@@ -36,8 +51,16 @@ class GameContainer extends React.Component<{}, State> {
     };
 
     public newGameOnClickHandler = () => {
-        const newBoard = generateBoard();
-        this.setState({boardData: newBoard, currentBoard: this.copyBoard(newBoard)});
+        this.setState({loading: true});
+        generateBoard().then(
+            newBoard => {
+                this.setState({
+                    boardData: newBoard,
+                    currentBoard: this.copyBoard(newBoard),
+                    loading: false
+                });
+            }
+        );
     };
 
     public refreshGameOnClickHandler = () => {

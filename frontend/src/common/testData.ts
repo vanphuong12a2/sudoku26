@@ -14,3 +14,7 @@ export function sampleBoardData(): number[][] {
     ];
 }
 
+export function emptyBoardData(): number[][] {
+    return new Array(9).fill(0).map(() => new Array(9).fill(EMPTY_CELL));
+}
+

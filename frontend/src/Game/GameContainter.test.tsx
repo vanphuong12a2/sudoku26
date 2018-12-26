@@ -2,22 +2,34 @@ import {shallow} from 'enzyme';
 import React from 'react';
 import GameContainer from './GameContainer';
 import Game from './Game';
-
-jest.mock('../common/boardFunctions', () => {
-    return {
-        generateBoard: () => {
-            return new Array(9).fill(0).map(() => new Array(9).fill(1));
-        },
-    };
-});
+import * as boardFunctions from '../common/boardFunctions';
+import {emptyBoardData, sampleBoardData} from '../common/testData';
 
 describe('<GameContainer />', () => {
 
-    it('should sent correct props to Game', () => {
-        const boardData = new Array(9).fill(0).map(() => new Array(9).fill(1));
-        const component = shallow(<GameContainer/>);
-        const instance = component.instance() as GameContainer;
+    let promise: Promise<number[][]>;
+    let boardData: number[][];
 
+    beforeEach(() => {
+        boardData = sampleBoardData();
+        promise = Promise.resolve(boardData);
+        Object.defineProperty(boardFunctions, 'generateBoard', {value: jest.fn(() => promise)});
+        Object.defineProperty(boardFunctions, 'generateEmptyBoard', {value: jest.fn(() => emptyBoardData())});
+    });
+
+    it('should create new board on mount', async () => {
+        const component = shallow(<GameContainer/>);
+        await promise;
+
+        expect(component.state('boardData')).toEqual(boardData);
+        expect(component.state('currentBoard')).toEqual(boardData);
+    });
+
+    it('should sent correct props to Game', async () => {
+        const component = shallow(<GameContainer/>);
+        await promise;
+
+        const instance = component.instance() as GameContainer;
         expect(component.find(Game).length).toBe(1);
         expect(component.find(Game).prop('boardData')).toEqual(boardData);
         expect(component.find(Game).prop('currentBoard')).toEqual(boardData);

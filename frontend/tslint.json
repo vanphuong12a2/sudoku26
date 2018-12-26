@@ -1,7 +1,7 @@
 {
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
-    "no-console": [true],
+    "no-console": [false],
     "ordered-imports": [false],
     "quotemark": [true, "single"],
     "interface-name": [false]
