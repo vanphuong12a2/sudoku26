@@ -5,7 +5,6 @@ import {generateBoard, generateEmptyBoard, solveBoard} from '../common/boardFunc
 interface State {
     boardData: number[][]
     currentBoard: number[][]
-    loading: boolean
 }
 
 class GameContainer extends React.Component<{}, State> {
@@ -15,28 +14,24 @@ class GameContainer extends React.Component<{}, State> {
         const newBoard = generateEmptyBoard();
         this.state = {
             boardData: newBoard,
-            currentBoard: this.copyBoard(newBoard),
-            loading: false
+            currentBoard: this.copyBoard(newBoard)
         };
     }
 
     public componentDidMount() {
-        this.setState({loading: true});
         generateBoard().then(
             randomBoard => {
                 this.setState({
                     boardData: randomBoard,
-                    currentBoard: this.copyBoard(randomBoard),
-                    loading: false
+                    currentBoard: this.copyBoard(randomBoard)
                 });
             }
-        ).catch(() => this.setState({loading: false}));
+        )
     }
 
     public render() {
         return (
             <Game
-                loading={this.state.loading}
                 boardData={this.state.boardData}
                 currentBoard={this.state.currentBoard}
                 onCellChange={this.onCellChange}
@@ -53,29 +48,25 @@ class GameContainer extends React.Component<{}, State> {
     };
 
     public solveGameOnClickHandler = () => {
-        this.setState({loading: true});
         solveBoard(this.state.currentBoard).then(
             solutionBoard => {
                 this.setState({
                     boardData: this.state.currentBoard,
-                    currentBoard: this.copyBoard(solutionBoard),
-                    loading: false
+                    currentBoard: this.copyBoard(solutionBoard)
                 });
             }
-        ).catch(() => this.setState({loading: false}));
+        )
     };
 
     public newGameOnClickHandler = () => {
-        this.setState({loading: true});
         generateBoard().then(
             newBoard => {
                 this.setState({
                     boardData: newBoard,
-                    currentBoard: this.copyBoard(newBoard),
-                    loading: false
+                    currentBoard: this.copyBoard(newBoard)
                 });
             }
-        ).catch(() => this.setState({loading: false}));
+        )
     };
 
     public refreshGameOnClickHandler = () => {

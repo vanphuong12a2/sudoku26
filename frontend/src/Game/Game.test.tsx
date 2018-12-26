@@ -12,7 +12,6 @@ describe('<Game />', () => {
 
         it('renders game area correctly when not loading', () => {
             const board = create(<Game
-                loading={false}
                 boardData={sampleBoardData()}
                 currentBoard={sampleBoardData()}
                 onCellChange={jest.fn()}
@@ -35,7 +34,6 @@ describe('<Game />', () => {
         const solveGameOnClickHandler = jest.fn();
 
         const component = shallow(<Game
-            loading={false}
             boardData={boardData}
             currentBoard={boardData}
             onCellChange={onCellChange}
@@ -45,7 +43,6 @@ describe('<Game />', () => {
             solveGameOnClickHandler={solveGameOnClickHandler}
         />);
 
-        expect(component.find(Board).prop('loading')).toEqual(false);
         expect(component.find(Board).prop('boardData')).toEqual(boardData);
         expect(component.find(Board).prop('currentBoard')).toEqual(boardData);
         expect(component.find(Board).prop('onCellChange')).toEqual(onCellChange);

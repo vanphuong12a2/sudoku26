@@ -4,7 +4,6 @@ import './Game.css';
 import Board from './Board/Board';
 
 interface Props {
-    loading: boolean
     boardData: number[][]
     currentBoard: number[][]
     newGameOnClickHandler: () => void
@@ -19,7 +18,6 @@ const Game = (props: Props) => {
         <React.Fragment>
             <div className='game-container'>
                 <Board
-                    loading={props.loading}
                     boardData={props.boardData}
                     currentBoard={props.currentBoard}
                     onCellChange={props.onCellChange}
