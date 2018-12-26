@@ -19,8 +19,10 @@ describe('<GameContainer />', () => {
 
     it('should create new board on mount', async () => {
         const component = shallow(<GameContainer/>);
+        expect(component.state('loading')).toEqual(true);
         await promise;
 
+        expect(component.state('loading')).toEqual(false);
         expect(component.state('boardData')).toEqual(boardData);
         expect(component.state('currentBoard')).toEqual(boardData);
     });
@@ -31,6 +33,7 @@ describe('<GameContainer />', () => {
 
         const instance = component.instance() as GameContainer;
         expect(component.find(Game).length).toBe(1);
+        expect(component.find(Game).prop('loading')).toEqual(false);
         expect(component.find(Game).prop('boardData')).toEqual(boardData);
         expect(component.find(Game).prop('currentBoard')).toEqual(boardData);
         expect(component.find(Game).prop('onCellChange')).toEqual(instance.onCellChange);

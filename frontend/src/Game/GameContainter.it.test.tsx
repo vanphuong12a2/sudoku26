@@ -21,6 +21,8 @@ describe('<GameContainer />', () => {
 
         it('should display a new game', async () => {
             const gameContainer = mount(<GameContainer/>);
+            await promise;
+            gameContainer.update();
 
             gameContainer.find('a').findWhere(wrapper => wrapper.text() === 'New game').simulate('click');
             await promise;
@@ -34,6 +36,7 @@ describe('<GameContainer />', () => {
         it('should display a new game', async () => {
             const gameContainer = mount(<GameContainer/>);
             await promise;
+            gameContainer.update();
 
             gameContainer.find('input').first().simulate('change', {target: {value: '3'}});
             expect(gameContainer.find('input').first().prop('value')).toEqual(3);
@@ -48,6 +51,7 @@ describe('<GameContainer />', () => {
         it('should display a new game', async () => {
             const gameContainer = mount(<GameContainer/>);
             await promise;
+            gameContainer.update();
 
             gameContainer.find('input').first().simulate('change', {target: {value: '1'}});
             gameContainer.find('a').findWhere(wrapper => wrapper.text() === 'Clear all').simulate('click');
@@ -61,6 +65,7 @@ describe('<GameContainer />', () => {
         it('should display the number', async () => {
             const gameContainer = mount(<GameContainer/>);
             await promise;
+            gameContainer.update();
 
             gameContainer.find('input').first().simulate('change', {target: {value: '3'}});
 
@@ -70,6 +75,7 @@ describe('<GameContainer />', () => {
         it('should erase the number', async () => {
             const gameContainer = mount(<GameContainer/>);
             await promise;
+            gameContainer.update();
 
             gameContainer.find('input').first().simulate('change', {target: {value: '3'}});
             expect(gameContainer.find('input').first().prop('value')).toEqual(3);
@@ -81,6 +87,7 @@ describe('<GameContainer />', () => {
         it('should not display invalid input', async () => {
             const gameContainer = mount(<GameContainer/>);
             await promise;
+            gameContainer.update();
 
             gameContainer.find('input').first().simulate('change', {target: {value: 'w'}});
 

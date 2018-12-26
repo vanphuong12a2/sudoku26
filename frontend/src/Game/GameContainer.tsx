@@ -30,12 +30,13 @@ class GameContainer extends React.Component<{}, State> {
                     loading: false
                 });
             }
-        );
+        ).catch(() => this.setState({loading: false}));
     }
 
     public render() {
         return (
             <Game
+                loading={this.state.loading}
                 boardData={this.state.boardData}
                 currentBoard={this.state.currentBoard}
                 onCellChange={this.onCellChange}
@@ -60,7 +61,8 @@ class GameContainer extends React.Component<{}, State> {
                     loading: false
                 });
             }
-        );
+        ).catch(() => this.setState({loading: false}))
+        ;
     };
 
     public refreshGameOnClickHandler = () => {

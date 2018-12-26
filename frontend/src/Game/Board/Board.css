@@ -2,7 +2,10 @@
     margin:1em;
     max-width: 450px;
     max-height: 450px;
+    width: 100%;
+    position: relative;
 }
+
 .main-board td {
     border:1px solid;
     padding: 0;
@@ -43,3 +46,12 @@
     cursor: pointer;
     color: black;
 }
+
+.main-board i {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+

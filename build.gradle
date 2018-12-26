@@ -39,4 +39,4 @@ task moveFrontend(dependsOn: 'frontend:yarn_build') {
 
 test.dependsOn('frontend:yarn_test')
 bootJar.dependsOn(moveFrontend)
-
+bootRun.dependsOn(build)

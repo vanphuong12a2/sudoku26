@@ -1,9 +1,10 @@
 import React from 'react';
 import ControlArea from './ControlArea/ControlArea';
-import './Game.css'
+import './Game.css';
 import Board from './Board/Board';
 
 interface Props {
+    loading: boolean
     boardData: number[][]
     currentBoard: number[][]
     newGameOnClickHandler: () => void
@@ -14,18 +15,21 @@ interface Props {
 
 const Game = (props: Props) => {
     return (
-        <div className='game-container'>
-            <Board
-                boardData={props.boardData}
-                currentBoard={props.currentBoard}
-                onCellChange={props.onCellChange}
-            />
-            <ControlArea
-                newGameOnClickHandler={props.newGameOnClickHandler}
-                refreshGameOnClickHandler={props.refreshGameOnClickHandler}
-                clearBoardOnClickHandler={props.clearBoardOnClickHandler}
-            />
-        </div>
+        <React.Fragment>
+            <div className='game-container'>
+                <Board
+                    loading={props.loading}
+                    boardData={props.boardData}
+                    currentBoard={props.currentBoard}
+                    onCellChange={props.onCellChange}
+                />
+                <ControlArea
+                    newGameOnClickHandler={props.newGameOnClickHandler}
+                    refreshGameOnClickHandler={props.refreshGameOnClickHandler}
+                    clearBoardOnClickHandler={props.clearBoardOnClickHandler}
+                />
+            </div>
+        </React.Fragment>
     );
 };
 

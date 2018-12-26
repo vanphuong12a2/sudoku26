@@ -34,12 +34,6 @@ exports[`<ControlArea /> Snapshots renders correctly 1`] = `
       className="waves-effect waves-light btn-small"
       onClick={[Function]}
     >
-      Validate
-    </a>
-    <a
-      className="waves-effect waves-light btn-small"
-      onClick={[Function]}
-    >
       Show solution
     </a>
   </fieldset>
