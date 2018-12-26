@@ -5,6 +5,7 @@ import {generateBoard, generateEmptyBoard, solveBoard} from '../common/boardFunc
 interface State {
     boardData: number[][]
     currentBoard: number[][]
+    error?: Error
 }
 
 class GameContainer extends React.Component<{}, State> {
@@ -26,10 +27,15 @@ class GameContainer extends React.Component<{}, State> {
                     currentBoard: this.copyBoard(randomBoard)
                 });
             }
-        )
+        ).catch(() => {;});
     }
 
     public render() {
+        const error = this.state.error;
+        if (error) {
+            this.setState({error: undefined});
+            throw error;
+        }
         return (
             <Game
                 boardData={this.state.boardData}
@@ -55,7 +61,7 @@ class GameContainer extends React.Component<{}, State> {
                     currentBoard: this.copyBoard(solutionBoard)
                 });
             }
-        )
+        ).catch((error: Error) => this.setState({error}));
     };
 
     public newGameOnClickHandler = () => {
@@ -66,7 +72,7 @@ class GameContainer extends React.Component<{}, State> {
                     currentBoard: this.copyBoard(newBoard)
                 });
             }
-        )
+        ).catch((error: Error) => this.setState({error}));
     };
 
     public refreshGameOnClickHandler = () => {

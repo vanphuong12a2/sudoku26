@@ -3,7 +3,7 @@
 exports[`<Cell /> Snapshots renders Cell correctly 1`] = `
 <td>
   <input
-    className="readonly"
+    className="readonly invalid"
     maxLength={1}
     onChange={[Function]}
     readOnly={true}

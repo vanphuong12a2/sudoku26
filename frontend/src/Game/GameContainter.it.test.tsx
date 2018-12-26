@@ -115,6 +115,16 @@ describe('<GameContainer />', () => {
 
             expect(gameContainer.find('input').first().prop('value')).toEqual('');
         });
+
+        it('should highlight invalid input', async () => {
+            const gameContainer = mount(<GameContainer/>);
+            await promise;
+            gameContainer.update();
+
+            gameContainer.find('input').first().simulate('change', {target: {value: '2'}});
+
+            expect(gameContainer.find('input').first().hasClass('invalid')).toBeTruthy();
+        });
     });
 
 });

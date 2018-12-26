@@ -1,6 +1,7 @@
 import React from 'react';
 import Cell, {EMPTY_CELL} from '../Cell/Cell';
 import './Board.css';
+import {getIllegalCellsMap, INVALID_CELL} from '../../common/boardFunctions';
 
 interface Props {
     boardData: number[][]
@@ -10,6 +11,7 @@ interface Props {
 
 const Board = (props: Props) => {
 
+    const illegalCellsMap = getIllegalCellsMap(props.currentBoard);
     return (
         <table className='main-board'>
             <tbody>
@@ -17,13 +19,14 @@ const Board = (props: Props) => {
                 return (
                     <tr key={rowIndex}>
                         {
-                            props.currentBoard[rowIndex].map((cellData, cellIndex) => {
+                            props.currentBoard[rowIndex].map((cellData, columnIndex) => {
                                 return (
                                     <Cell
-                                        key={cellIndex}
+                                        key={columnIndex}
                                         cellData={cellData}
-                                        readOnly={props.boardData[rowIndex][cellIndex] !== EMPTY_CELL}
-                                        onCellChange={props.onCellChange(rowIndex, cellIndex)}
+                                        invalid={illegalCellsMap[rowIndex][columnIndex] === INVALID_CELL}
+                                        readOnly={props.boardData[rowIndex][columnIndex] !== EMPTY_CELL}
+                                        onCellChange={props.onCellChange(rowIndex, columnIndex)}
                                     />
                                 );
                             })

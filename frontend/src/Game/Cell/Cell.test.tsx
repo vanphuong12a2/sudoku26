@@ -11,6 +11,7 @@ describe('<Cell />', () => {
             const cell = create(
                 <Cell
                     cellData={3}
+                    invalid={true}
                     readOnly={true}
                     onCellChange={jest.fn()}
                 />);
@@ -22,6 +23,7 @@ describe('<Cell />', () => {
             const cell = create(
                 <Cell
                     cellData={0}
+                    invalid={false}
                     readOnly={true}
                     onCellChange={jest.fn()}
                 />);

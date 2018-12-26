@@ -1,5 +1,5 @@
 import fetchMock from 'fetch-mock';
-import {generateBoard, solveBoard} from './boardFunctions';
+import {generateBoard, getIllegalCellsMap, solveBoard} from './boardFunctions';
 
 describe('board functions', () => {
 
@@ -24,9 +24,9 @@ describe('board functions', () => {
             [0, 0, 0, 0, 3, 5, 0, 0, 0],
             [2, 0, 0, 0, 0, 0, 0, 0, 0]];
 
-        await generateBoard().then(board =>
-            expect(board).toEqual(expectedBoard)
-        );
+        await generateBoard()
+            .then(board => expect(board).toEqual(expectedBoard))
+            .catch((error) => fail(error));
 
     });
 
@@ -57,9 +57,33 @@ describe('board functions', () => {
             [2, 1, 3, 7, 4, 6, 5, 8, 9]]
         ;
 
-        await solveBoard(inputBoard).then(board =>
-            expect(board).toEqual(expectedBoard)
-        );
+        await solveBoard(inputBoard)
+            .then(board => expect(board).toEqual(expectedBoard))
+            .catch((error) => fail(error));
+    });
 
+    it('should return illegal cells', () => {
+        const inputBoard = [
+            [8, 8, 0, 0, 5, 1, 0, 0, 0],
+            [0, 0, 0, 6, 0, 0, 0, 2, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 3, 0, 0, 0, 4, 8, 0, 5],
+            [5, 0, 7, 4, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 1, 0, 0],
+            [4, 0, 6, 0, 0, 0, 0, 7, 0],
+            [0, 0, 0, 0, 3, 5, 0, 0, 0],
+            [2, 0, 0, 0, 0, 0, 0, 0, 5]];
+
+        expect(getIllegalCellsMap(inputBoard)).toEqual([
+            [-1, -1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, -1, 0, 0, -1],
+            [0, 0, 0, -1, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, -1]]
+        );
     });
 });

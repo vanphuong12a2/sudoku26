@@ -4,6 +4,7 @@ export const EMPTY_CELL = 0;
 
 interface Props {
     cellData: number
+    invalid: boolean
     readOnly: boolean
     onCellChange: (newValue: number) => void
 }
@@ -16,10 +17,11 @@ const Cell = (props: Props) => {
         props.onCellChange(newValue);
     };
 
+    const className = (props.readOnly ? 'readonly' : 'writable') + (props.invalid ? ' invalid' : '');
     return (
         <td>
             <input
-                className={props.readOnly ? 'readonly' : 'writable'}
+                className={className}
                 maxLength={1}
                 readOnly={props.readOnly}
                 value={props.cellData !== EMPTY_CELL ? props.cellData : ''}
