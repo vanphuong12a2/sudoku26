@@ -19,12 +19,24 @@ function convertto1DArray(stringWithCommaSeparator: string) {
 
 const solveBoard = async (boardData: number[][]) => {
     return fetch(`${solveUrl}?inputBoard=${boardData.join()}`)
+        .then(response => {
+            if (!response.ok) {
+                throw Error('Not 200 ok');
+            }
+            return response;
+        })
         .then(response => response.json())
         .then(convertTo2DArray);
 };
 
 const generateBoard = async () => {
     return fetch(generateUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw Error('Not 200 ok');
+            }
+            return response;
+        })
         .then(response => response.json())
         .then(convertTo2DArray);
 };
@@ -53,8 +65,8 @@ const getIllegalCellsMap = (boardData: number[][]) => {
         row.forEach((cell, columnIndex) => {
             rowBoard[rowIndex].push(cell);
             columnBoard[columnIndex].push(cell);
-            boxBoard[Math.floor(rowIndex / 3) * 3 + Math.floor(columnIndex/3)].push(cell);
-        })
+            boxBoard[Math.floor(rowIndex / 3) * 3 + Math.floor(columnIndex / 3)].push(cell);
+        });
     });
 
     rowBoard.forEach((row, rowIndex) => {

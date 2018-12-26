@@ -18,7 +18,7 @@ describe('<ErrorBoundary />', () => {
         wrapper.instance().setState({hasError: true});
         wrapper.update();
 
-        expect(wrapper.find('div').text()).toBe('Something went wrong. Please refresh the page :)');
+        expect(wrapper.find('.error-message').text()).toContain('Something went wrong. Please refresh the page');
     });
 
 

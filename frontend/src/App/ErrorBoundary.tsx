@@ -21,9 +21,16 @@ class ErrorBoundary extends React.Component<Props, State> {
 
     public render(): React.ReactNode {
         if (this.state.hasError) {
-            return <div>Something went wrong. Please refresh the page :)</div>;
+            return (
+                <div className='error'>
+                    <div className='error-message'>
+                        Something went wrong. Please refresh the page
+                        <i className='material-icons'>refresh</i>
+                    </div>
+                </div>
+            );
         }
-        return this.props.children
+        return this.props.children;
     }
 }
 
