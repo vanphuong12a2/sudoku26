@@ -1,9 +1,11 @@
 import React, {ChangeEvent} from 'react';
+import './Cell.css';
 
 export const EMPTY_CELL = 0;
 
 interface Props {
     cellData: number
+    finish: boolean
     invalid: boolean
     readOnly: boolean
     onCellChange: (newValue: number) => void
@@ -17,7 +19,8 @@ const Cell = (props: Props) => {
         props.onCellChange(newValue);
     };
 
-    const className = (props.readOnly ? 'readonly' : 'writable') + (props.invalid ? ' invalid' : '');
+    const unFinishClassName = (props.readOnly ? 'readonly' : 'writable') + (props.invalid ? ' invalid' : '');
+    const className = props.finish ? 'finish' : unFinishClassName;
     return (
         <td>
             <input

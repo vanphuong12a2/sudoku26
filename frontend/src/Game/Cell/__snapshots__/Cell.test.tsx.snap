@@ -23,3 +23,15 @@ exports[`<Cell /> Snapshots renders empty Cell correctly 1`] = `
   />
 </td>
 `;
+
+exports[`<Cell /> Snapshots renders finish Cell correctly 1`] = `
+<td>
+  <input
+    className="finish"
+    maxLength={1}
+    onChange={[Function]}
+    readOnly={true}
+    value=""
+  />
+</td>
+`;

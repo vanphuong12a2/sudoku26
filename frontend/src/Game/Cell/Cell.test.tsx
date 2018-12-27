@@ -11,6 +11,7 @@ describe('<Cell />', () => {
             const cell = create(
                 <Cell
                     cellData={3}
+                    finish={false}
                     invalid={true}
                     readOnly={true}
                     onCellChange={jest.fn()}
@@ -23,6 +24,21 @@ describe('<Cell />', () => {
             const cell = create(
                 <Cell
                     cellData={0}
+                    finish={false}
+                    invalid={false}
+                    readOnly={true}
+                    onCellChange={jest.fn()}
+                />);
+            expect(cell.toJSON()).toMatchSnapshot();
+        });
+
+
+        it('renders finish Cell correctly', () => {
+
+            const cell = create(
+                <Cell
+                    cellData={0}
+                    finish={true}
                     invalid={false}
                     readOnly={true}
                     onCellChange={jest.fn()}

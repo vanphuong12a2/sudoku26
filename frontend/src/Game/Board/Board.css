@@ -38,21 +38,6 @@
     font-size: 1.7rem;
 }
 
-.main-board input.writable {
-    color: green;
-}
-
-.main-board input.readonly {
-    cursor: pointer;
-    color: black;
-}
-
-.main-board input.invalid {
-    background: pink;
-    border: 0;
-    box-shadow: none;
-}
-
 .main-board i {
     position: absolute;
     left: 50%;

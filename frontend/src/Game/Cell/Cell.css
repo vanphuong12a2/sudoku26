@@ -1,0 +1,18 @@
+.main-board input.finish {
+    background: lightgreen;
+}
+
+.main-board input.writable {
+    color: green;
+}
+
+.main-board input.readonly {
+    cursor: pointer;
+    color: black;
+}
+
+.main-board input.invalid {
+    background: pink;
+    border: 0;
+    box-shadow: none;
+}

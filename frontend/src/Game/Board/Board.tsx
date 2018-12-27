@@ -12,6 +12,11 @@ interface Props {
 const Board = (props: Props) => {
 
     const illegalCellsMap = getIllegalCellsMap(props.currentBoard);
+
+    const allCellsAreFilled = !props.currentBoard.join().includes(EMPTY_CELL.toString());
+    const noInvalidCell = !illegalCellsMap.join().includes(INVALID_CELL.toString());
+    const finish = allCellsAreFilled && noInvalidCell;
+
     return (
         <table className='main-board'>
             <tbody>
@@ -24,6 +29,7 @@ const Board = (props: Props) => {
                                     <Cell
                                         key={columnIndex}
                                         cellData={cellData}
+                                        finish={finish}
                                         invalid={illegalCellsMap[rowIndex][columnIndex] === INVALID_CELL}
                                         readOnly={props.boardData[rowIndex][columnIndex] !== EMPTY_CELL}
                                         onCellChange={props.onCellChange(rowIndex, columnIndex)}
