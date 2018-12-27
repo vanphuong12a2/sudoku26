@@ -2,6 +2,10 @@
     background: lightgreen;
 }
 
+.main-board input.finish.readonly {
+    background: lightgray;
+}
+
 .main-board input.writable {
     color: green;
 }

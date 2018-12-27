@@ -19,8 +19,9 @@ const Cell = (props: Props) => {
         props.onCellChange(newValue);
     };
 
-    const unFinishClassName = (props.readOnly ? 'readonly' : 'writable') + (props.invalid ? ' invalid' : '');
-    const className = props.finish ? 'finish' : unFinishClassName;
+    const className = (props.readOnly ? 'readonly' : 'writable')
+        + (props.invalid ? ' invalid' : '')
+        + (props.finish ? ' finish' : '');
     return (
         <td>
             <input

@@ -764,7 +764,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -773,7 +773,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -782,7 +782,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -791,7 +791,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -800,7 +800,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -809,7 +809,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -818,7 +818,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -827,7 +827,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -836,7 +836,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -847,7 +847,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -856,7 +856,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -865,7 +865,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -874,7 +874,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -883,7 +883,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -892,7 +892,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -901,7 +901,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -910,7 +910,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -919,7 +919,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -930,7 +930,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -939,7 +939,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -948,7 +948,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -957,7 +957,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -966,7 +966,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -975,7 +975,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -984,7 +984,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -993,7 +993,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1002,7 +1002,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1013,7 +1013,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1022,7 +1022,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1031,7 +1031,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1040,7 +1040,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1049,7 +1049,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1058,7 +1058,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1067,7 +1067,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1076,7 +1076,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1085,7 +1085,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1096,7 +1096,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1105,7 +1105,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1114,7 +1114,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1123,7 +1123,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1132,7 +1132,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1141,7 +1141,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1150,7 +1150,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1159,7 +1159,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1168,7 +1168,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1179,7 +1179,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1188,7 +1188,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1197,7 +1197,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1206,7 +1206,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1215,7 +1215,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1224,7 +1224,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1233,7 +1233,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1242,7 +1242,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1251,7 +1251,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1262,7 +1262,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1271,7 +1271,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1280,7 +1280,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1289,7 +1289,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1298,7 +1298,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1307,7 +1307,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1316,7 +1316,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1325,7 +1325,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1334,7 +1334,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1345,7 +1345,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1354,7 +1354,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1363,7 +1363,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1372,7 +1372,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1381,7 +1381,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1390,7 +1390,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1399,7 +1399,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1408,7 +1408,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1417,7 +1417,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1428,7 +1428,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
     <tr>
       <td>
         <input
-          className="finish"
+          className="readonly finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={true}
@@ -1437,7 +1437,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1446,7 +1446,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1455,7 +1455,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1464,7 +1464,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1473,7 +1473,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1482,7 +1482,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1491,7 +1491,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
@@ -1500,7 +1500,7 @@ exports[`<Board /> Snapshots renders boardData correctly when all finish 1`] = `
       </td>
       <td>
         <input
-          className="finish"
+          className="writable finish"
           maxLength={1}
           onChange={[Function]}
           readOnly={false}
