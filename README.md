@@ -30,5 +30,10 @@ cd frontend
 yarn test-watch
 ```
 
+#### Cypress e2e test
+```
+yarn run cypress open
+```
+
 ### Sudoku samples
 The samples was downloaded from http://magictour.free.fr/top1465
