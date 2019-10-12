@@ -23,6 +23,11 @@ repositories {
 	mavenCentral()
 }
 
+bootJar {
+	baseName = 'sudoku26'
+	version =  '0.1.0'
+}
+
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
