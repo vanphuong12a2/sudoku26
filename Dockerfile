@@ -1,4 +1,22 @@
+FROM openjdk:8-jdk-alpine as build
+WORKDIR /workspace/app
+
+COPY build.gradle .
+COPY gradle gradle
+COPY gradlew .
+COPY settings.gradle .
+
+COPY src src
+COPY frontend frontend
+
+RUN apk add --update yarn
+RUN ./gradlew build -x test
+RUN mkdir -p build/libs/dependency && (cd build/libs/dependency; jar -xf ../*.jar)
+
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-COPY build/libs/*.jar app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ARG DEPENDENCY=/workspace/app/build/libs/dependency
+COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
+COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
+ENTRYPOINT ["java","-cp","app:app/lib/*","com.herokuapp.sudoku26.Application"]
