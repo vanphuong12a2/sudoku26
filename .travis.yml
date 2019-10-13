@@ -1,4 +1,8 @@
-language: java
+services:
+  - docker
+
+script: ./scripts/runAllTests.sh
+
 deploy:
   provider: heroku
   api_key:
