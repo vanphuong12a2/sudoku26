@@ -1,0 +1,3 @@
+- Travis: warning: failed to remove e2eTest/cypress/videos/index_spec.js.mp4: Permission denied
+- (Upload docker images)
+- Heroku with docker instead of java
