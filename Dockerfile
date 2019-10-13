@@ -10,7 +10,7 @@ COPY src src
 COPY frontend frontend
 
 RUN apk add --update yarn
-RUN ./gradlew build -x test
+RUN ./gradlew build
 RUN mkdir -p build/libs/dependency && (cd build/libs/dependency; jar -xf ../*.jar)
 
 FROM openjdk:8-jdk-alpine

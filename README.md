@@ -7,7 +7,7 @@ https://sudoku26.herokuapp.com/
 
 The `build` step makes sure frontend artifact is moved to java build folder.
 ```
-gradle build bootRun
+./gradlew build bootRun
 ```
 or
 ```
@@ -23,26 +23,13 @@ yarn start
 New game and solve game buttons will not work as they call the backend for data.
 
 ### Testing
-To run all tests: 
-```
-gradle test
-```
+To run all tests: `./scripts/runAllTests.sh`  
+Exclude e2e tests: `./gradlew test`
 
 To watch on frontend tests: 
 ```
 cd frontend
 yarn test-watch
-```
-
-#### Cypress e2e test
-```
-cd e2eTest
-yarn run cypress open
-```
-or
-```
-cd e2eTest
-docker-compose up --exit-code-from cypress
 ```
 
 ### Sudoku samples
