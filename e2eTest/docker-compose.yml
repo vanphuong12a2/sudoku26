@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  sudoku26:
+    build: ../
+  cypress:
+    image: "cypress/included:3.2.0"
+    depends_on:
+      - sudoku26
+    environment:
+      - CYPRESS_baseUrl=http://sudoku26:8080
+    working_dir: /e2eTest
+    volumes:
+      - ./:/e2eTest

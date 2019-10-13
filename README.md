@@ -9,7 +9,11 @@ The `build` step makes sure frontend artifact is moved to java build folder.
 ```
 gradle build bootRun
 ```
-
+or
+```
+docker build -t sudoku26
+docker run -p 8080:8080 sudoku26
+```
 
 To run a react embedded server for frontend development: 
 ```$xslt
@@ -32,7 +36,13 @@ yarn test-watch
 
 #### Cypress e2e test
 ```
+cd e2eTest
 yarn run cypress open
+```
+or
+```
+cd e2eTest
+docker-compose up --exit-code-from cypress
 ```
 
 ### Sudoku samples
